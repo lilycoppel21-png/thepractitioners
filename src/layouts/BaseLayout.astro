@@ -40,6 +40,9 @@ const { title, description = site.tagline } = Astro.props;
   </head>
 
   <body class="flex min-h-screen flex-col">
+    <!-- Thin accent bar across the very top of every page (a small design detail). -->
+    <div class="h-1 w-full bg-blue"></div>
+
     <Header />
 
     <!-- Page content is injected here. -->

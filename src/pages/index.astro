@@ -14,6 +14,11 @@ import { site } from "../config";
 
 <BaseLayout title={site.name}>
   <section class="mx-auto max-w-3xl px-6 pt-20 pb-8 md:pt-28">
+    <!-- Small "kicker" label above the title (uppercase, letter-spaced). -->
+    <p class="mb-4 text-sm font-medium uppercase tracking-[0.18em] text-blue">
+      A weekly publication
+    </p>
+
     <!-- Name -->
     <h1 class="text-4xl font-semibold tracking-tight md:text-6xl">
       {site.name}
@@ -41,6 +46,10 @@ import { site } from "../config";
       >
         Subscribe on Substack
       </a>
+      <!-- Small reassurance line under the button. -->
+      <p class="mt-4 text-sm text-muted">
+        Free to read &middot; A new issue every week &middot; Unsubscribe anytime
+      </p>
     </div>
   </section>
 
@@ -53,7 +62,37 @@ import { site } from "../config";
         field — what's working, what isn't, and what it means for the organizations
         and communities involved. Practical, honest, and grounded in practice.
       </p>
-      <p class="mt-6">
+
+      <!-- Three short points. Edit the heading + text of each one freely; the big
+           serif numbers (01/02/03) are just for an editorial feel. -->
+      <div class="mt-12 grid gap-10 sm:grid-cols-3">
+        <div>
+          <p class="font-serif text-3xl text-blue">01</p>
+          <h3 class="mt-3 text-lg font-semibold">Field reports</h3>
+          <p class="mt-2 text-base leading-relaxed text-muted">
+            Real stories from organizations putting AI to work — in their own words,
+            not a vendor's.
+          </p>
+        </div>
+        <div>
+          <p class="font-serif text-3xl text-blue">02</p>
+          <h3 class="mt-3 text-lg font-semibold">Honest assessments</h3>
+          <p class="mt-2 text-base leading-relaxed text-muted">
+            What it cost, what broke, and where the tools fall short — evidence over
+            enthusiasm.
+          </p>
+        </div>
+        <div>
+          <p class="font-serif text-3xl text-blue">03</p>
+          <h3 class="mt-3 text-lg font-semibold">Practical takeaways</h3>
+          <p class="mt-2 text-base leading-relaxed text-muted">
+            Clear lessons you can apply to your own work, whatever your mission or
+            budget.
+          </p>
+        </div>
+      </div>
+
+      <p class="mt-12">
         <a href="/about" class="text-blue hover:underline">
           More about the mission &rarr;
         </a>
