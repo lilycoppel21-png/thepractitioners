@@ -2,6 +2,8 @@
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 
+import cloudflare from "@astrojs/cloudflare";
+
 // Astro configuration.
 // - `site` is your final public URL. It's used when Astro generates things like
 //   sitemaps and absolute links. Keep it pointed at your real domain.
@@ -9,7 +11,10 @@ import tailwindcss from '@tailwindcss/vite';
 //   with Astro). The actual colors/fonts live in src/styles/global.css.
 export default defineConfig({
   site: 'https://thepractitioners.org',
+
   vite: {
     plugins: [tailwindcss()],
   },
+
+  adapter: cloudflare()
 });
