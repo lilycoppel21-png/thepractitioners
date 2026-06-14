@@ -1,0 +1,25 @@
+---
+/*
+  Footer — shown at the bottom of every page.
+  Pulls the site name, tagline, and Substack link from src/config.ts.
+*/
+import { site } from "../config";
+
+// Astro runs on the server, so we can compute the current year at build time.
+const year = new Date().getFullYear();
+---
+
+<footer class="mt-24 border-t border-black/5 bg-cream">
+  <div class="mx-auto flex max-w-3xl flex-col gap-2 px-6 py-10 text-sm text-muted">
+    <p class="font-serif text-base text-navy">{site.name}</p>
+    <p>{site.tagline}</p>
+    <p class="mt-2">
+      <a href={site.substackUrl} class="text-blue hover:underline">
+        Read & subscribe on Substack &rarr;
+      </a>
+    </p>
+    <p class="mt-4 text-xs text-muted/80">
+      &copy; {year} {site.name}. All rights reserved.
+    </p>
+  </div>
+</footer>

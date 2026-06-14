@@ -1,0 +1,46 @@
+/*
+  Global styles for The Practitioners.
+  -------------------------------------
+  This file does two things:
+  1. Loads Tailwind CSS (the utility classes used throughout the pages).
+  2. Defines our design "tokens" — the brand colors and fonts — in one place.
+
+  To change the look of the whole site, edit the values in the @theme block below.
+*/
+
+@import "tailwindcss";
+
+@theme {
+  /* Brand colors. Use them in markup as e.g. text-blue, bg-cream, border-navy. */
+  --color-blue: #2563EB; /* primary — buttons, links */
+  --color-navy: #1E3A8A; /* deep accent — headings, hovers */
+  --color-cream: #FBF7EE; /* warm background accent */
+
+  /* Neutral text colors for comfortable reading. */
+  --color-ink: #1A1A1A; /* near-black body text */
+  --color-muted: #5B5B5B; /* softer grey for secondary text */
+
+  /* Fonts. Fraunces = editorial serif (headings); Inter = clean sans (body).
+     The actual font files are loaded in src/layouts/BaseLayout.astro.
+     To swap fonts, change both here and the <link> in that file. */
+  --font-serif: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* Base defaults applied to every page. */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Headings use the editorial serif by default. */
+h1, h2, h3 {
+  font-family: var(--font-serif);
+  color: var(--color-navy);
+}

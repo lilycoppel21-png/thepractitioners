@@ -1,0 +1,52 @@
+---
+/*
+  Writing page  (lives at  /writing  )
+  ------------------------------------
+  For now this simply points readers to the Substack, where all the writing lives.
+
+  LATER — pulling posts in automatically:
+  Substack publishes an RSS feed at  <your-substack-url>/feed . When you're ready to
+  list recent posts here, you can fetch that feed at build time and loop over it.
+  A rough sketch (uncomment and adapt when ready):
+
+      // const res = await fetch(`${site.substackUrl}/feed`);
+      // const xml = await res.text();
+      // ...parse the <item> entries (title, link, pubDate) and map over them below.
+
+  Alternatively, Astro "Content Collections" let you write posts as local Markdown
+  files in src/content/ and list them here. Either path slots into the markup below.
+*/
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { site } from "../config";
+---
+
+<BaseLayout title="Writing — The Practitioners">
+  <section class="mx-auto max-w-2xl px-6 pt-20 pb-8 md:pt-28">
+    <h1 class="text-4xl font-semibold tracking-tight md:text-5xl">Writing</h1>
+
+    <p class="mt-6 text-lg leading-relaxed text-ink">
+      The Practitioners is published weekly on Substack. That's where every issue
+      lives, and where you can read the archive and subscribe to get new pieces by
+      email.
+    </p>
+
+    <div class="mt-8">
+      <a
+        href={site.substackUrl}
+        class="inline-block rounded-md bg-blue px-6 py-3 text-base font-medium text-white transition-colors hover:bg-navy"
+      >
+        Read every issue on Substack
+      </a>
+    </div>
+
+    <!-- Placeholder for the future post list. When you wire up the Substack feed or
+         Content Collections (see the comment at the top of this file), the list of
+         posts will render here. -->
+    <div class="mt-16 border-t border-black/5 pt-8 text-muted">
+      <p class="text-sm">
+        Soon: recent issues will appear here automatically, pulled in from the
+        newsletter.
+      </p>
+    </div>
+  </section>
+</BaseLayout>

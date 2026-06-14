@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm --version)",
+      "Read(//opt/homebrew/bin/**)",
+      "Read(//Users/lilycoppel/.nvm/versions/**)",
+      "Read(//Users/lilycoppel/.local/state/**)",
+      "Read(//Users/lilycoppel/.volta/**)",
+      "Bash(command -v brew)",
+      "Bash(xcode-select -p)",
+      "Bash(command -v curl)",
+      "Bash(command -v corepack)",
+      "Bash(command -v asdf)",
+      "Bash(curl -s https://nodejs.org/dist/index.json)",
+      "Bash(set -e)",
+      "Bash(mkdir -p /Users/lilycoppel/.local)",
+      "Read(//Users/lilycoppel/.local/**)",
+      "Bash(curl -fsSL -o node.tar.gz https://nodejs.org/dist/__TRACKED_VAR__/node-__TRACKED_VAR__-darwin-arm64.tar.gz)",
+      "Bash(rm -rf node)"
+    ]
+  }
+}

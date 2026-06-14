@@ -1,0 +1,63 @@
+---
+/*
+  Home page  (lives at  /  )
+  --------------------------
+  A simple editorial hero: the name, a one-line description, a short paragraph on
+  what this is and who it's for, and a clear button to subscribe on Substack.
+
+  To edit the words, change the text below. The Subscribe link comes from
+  src/config.ts (substackUrl).
+*/
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { site } from "../config";
+---
+
+<BaseLayout title={site.name}>
+  <section class="mx-auto max-w-3xl px-6 pt-20 pb-8 md:pt-28">
+    <!-- Name -->
+    <h1 class="text-4xl font-semibold tracking-tight md:text-6xl">
+      {site.name}
+    </h1>
+
+    <!-- One-line description -->
+    <p class="mt-5 text-xl text-muted md:text-2xl">
+      {site.tagline}
+    </p>
+
+    <!-- Short "what this is / who it's for" paragraph -->
+    <p class="mt-8 max-w-2xl text-lg leading-relaxed text-ink">
+      The Practitioners is a weekly publication about how AI is actually being used
+      in the social impact sector — not the hype, but the real workflows, tools, and
+      decisions. It's written for the people doing the work: nonprofit operators,
+      social enterprise leaders, and humanitarian workers — not for technologists or
+      investors.
+    </p>
+
+    <!-- Clear call to action: subscribe on Substack -->
+    <div class="mt-10">
+      <a
+        href={site.substackUrl}
+        class="inline-block rounded-md bg-blue px-6 py-3 text-base font-medium text-white transition-colors hover:bg-navy"
+      >
+        Subscribe on Substack
+      </a>
+    </div>
+  </section>
+
+  <!-- A soft cream band to add warmth and break up the page. Edit or remove freely. -->
+  <section class="mt-16 bg-cream">
+    <div class="mx-auto max-w-3xl px-6 py-16">
+      <h2 class="text-2xl font-semibold md:text-3xl">What you'll find here</h2>
+      <p class="mt-4 max-w-2xl text-lg leading-relaxed text-ink">
+        Every week, a clear-eyed look at one way AI is meeting real needs in the
+        field — what's working, what isn't, and what it means for the organizations
+        and communities involved. Practical, honest, and grounded in practice.
+      </p>
+      <p class="mt-6">
+        <a href="/about" class="text-blue hover:underline">
+          More about the mission &rarr;
+        </a>
+      </p>
+    </div>
+  </section>
+</BaseLayout>
