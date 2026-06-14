@@ -9,9 +9,12 @@ import { site } from "../config";
 const year = new Date().getFullYear();
 ---
 
-<footer class="mt-24 border-t border-black/5 bg-cream">
-  <div class="mx-auto flex max-w-3xl flex-col gap-2 px-6 py-10 text-sm text-muted">
-    <p class="font-serif text-base text-navy">{site.name}</p>
+<footer class="mt-24 border-t border-navy/10">
+  <div class="mx-auto flex max-w-5xl flex-col gap-2 px-6 py-12 text-sm text-muted">
+    <p class="dateline">A weekly field report</p>
+    <p style="font-family: var(--font-display)" class="text-xl text-navy">
+      {site.name}
+    </p>
     <p>{site.tagline}</p>
     <p class="mt-2">
       <a href={site.substackUrl} class="text-blue hover:underline">

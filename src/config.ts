@@ -16,11 +16,12 @@ export const site = {
   //    page both link to it. (This is a placeholder until you update it.)
   substackUrl: "https://thepractitioners.substack.com",
 
-  // Navigation links shown in the header. Add a new entry here to add a nav item
-  // (e.g. later: { label: "Jobs", href: "/jobs" }).
+  // Navigation links shown in the header (the wordmark already links to the home page,
+  // so "Home" isn't listed). Add or remove entries here to change the menu everywhere.
   nav: [
-    { label: "Home", href: "/" },
     { label: "About", href: "/about" },
     { label: "Writing", href: "/writing" },
+    { label: "Jobs", href: "/jobs" },
+    { label: "Tools", href: "/tools" },
   ],
 };

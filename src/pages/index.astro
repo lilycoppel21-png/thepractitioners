@@ -1,102 +1,148 @@
 ---
 /*
-  Home page  (lives at  /  )
-  --------------------------
-  A simple editorial hero: the name, a one-line description, a short paragraph on
-  what this is and who it's for, and a clear button to subscribe on Substack.
+  Home page  (lives at  /  )  — the publication FRONT PAGE
+  --------------------------------------------------------
+  Structure (top to bottom):
+    1. Edition bar      — weekly edition + date + subscribe
+    2. Lead + Latest    — a big featured story, with a "Latest" headline rail beside it
+    3. Story grid       — "More from the field" cards
+    4. New-here band    — a short explainer + subscribe button (cream)
 
-  To edit the words, change the text below. The Subscribe link comes from
-  src/config.ts (substackUrl).
+  The stories come from src/data/issues.ts — edit them there.
 */
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { site } from "../config";
+import { issues } from "../data/issues";
+
+// The lead story = first issue marked featured (falls back to the newest).
+const featured = issues.find((i) => i.featured) ?? issues[0];
+const rest = issues.filter((i) => i !== featured);
+const latest = rest.slice(0, 5); // headline rail
+const more = rest; // grid below
+
+// Format "2026-06-12" → "12 June 2026".
+const fmt = (iso: string) =>
+  new Date(iso + "T00:00:00").toLocaleDateString("en-GB", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+
+// Each story links to its own href if set, otherwise to the Substack.
+const linkFor = (i: { href?: string }) => i.href ?? site.substackUrl;
+
+// Today's date for the edition bar.
+const today = new Date().toLocaleDateString("en-GB", {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+});
 ---
 
-<BaseLayout title={site.name}>
-  <section class="mx-auto max-w-3xl px-6 pt-20 pb-8 md:pt-28">
-    <!-- Small "kicker" label above the title (uppercase, letter-spaced). -->
-    <p class="mb-4 text-sm font-medium uppercase tracking-[0.18em] text-blue">
-      A weekly publication
-    </p>
+<BaseLayout title={`${site.name} — ${site.tagline}`}>
+  <!-- ===== 1. Edition bar ===== -->
+  <div class="border-b border-navy/10">
+    <div
+      class="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-x-4 gap-y-1 px-6 py-3"
+    >
+      <p class="dateline">Weekly edition · No. 1 · {today}</p>
+      <a href={site.substackUrl} class="dateline hover:underline">Subscribe →</a>
+    </div>
+  </div>
 
-    <!-- Name -->
-    <h1 class="text-4xl font-semibold tracking-tight md:text-6xl">
-      {site.name}
-    </h1>
+  <!-- ===== 2. Lead story + Latest rail ===== -->
+  <section class="mx-auto max-w-5xl px-6 py-12">
+    <div class="grid gap-10 lg:grid-cols-3 lg:gap-12">
+      <!-- Featured lead (spans two of three columns on large screens) -->
+      <article class="lg:col-span-2">
+        <p class="dateline">{featured.section} —</p>
+        <h1 class="mt-3">
+          <a
+            href={linkFor(featured)}
+            class="font-display text-[clamp(2rem,3.8vw,3rem)] font-medium leading-[1.1] text-navy transition-colors hover:text-blue"
+          >
+            {featured.title}
+          </a>
+        </h1>
+        <p class="lead mt-5 max-w-2xl">{featured.excerpt}</p>
+        <p class="mt-5 text-sm text-muted">
+          {fmt(featured.date)} ·
+          <a href={linkFor(featured)} class="text-blue hover:underline">Read on Substack →</a>
+        </p>
+      </article>
 
-    <!-- One-line description -->
-    <p class="mt-5 text-xl text-muted md:text-2xl">
-      {site.tagline}
-    </p>
-
-    <!-- Short "what this is / who it's for" paragraph -->
-    <p class="mt-8 max-w-2xl text-lg leading-relaxed text-ink">
-      The Practitioners is a weekly publication about how AI is actually being used
-      in the social impact sector — not the hype, but the real workflows, tools, and
-      decisions. It's written for the people doing the work: nonprofit operators,
-      social enterprise leaders, and humanitarian workers — not for technologists or
-      investors.
-    </p>
-
-    <!-- Clear call to action: subscribe on Substack -->
-    <div class="mt-10">
-      <a
-        href={site.substackUrl}
-        class="inline-block rounded-md bg-blue px-6 py-3 text-base font-medium text-white transition-colors hover:bg-navy"
-      >
-        Subscribe on Substack
-      </a>
-      <!-- Small reassurance line under the button. -->
-      <p class="mt-4 text-sm text-muted">
-        Free to read &middot; A new issue every week &middot; Unsubscribe anytime
-      </p>
+      <!-- Latest rail -->
+      <aside class="lg:col-span-1 lg:border-l lg:border-navy/10 lg:pl-8">
+        <p class="dateline">Latest</p>
+        <ul class="mt-4 divide-y divide-navy/10">
+          {
+            latest.map((issue) => (
+              <li class="py-4 first:pt-0">
+                <p class="dateline text-[0.7rem]">{issue.section}</p>
+                <a
+                  href={linkFor(issue)}
+                  class="mt-1 block font-display text-lg leading-snug text-navy transition-colors hover:text-blue"
+                >
+                  {issue.title}
+                </a>
+                <p class="mt-1 text-xs text-muted">{fmt(issue.date)}</p>
+              </li>
+            ))
+          }
+        </ul>
+      </aside>
     </div>
   </section>
 
-  <!-- A soft cream band to add warmth and break up the page. Edit or remove freely. -->
-  <section class="mt-16 bg-cream">
-    <div class="mx-auto max-w-3xl px-6 py-16">
-      <h2 class="text-2xl font-semibold md:text-3xl">What you'll find here</h2>
-      <p class="mt-4 max-w-2xl text-lg leading-relaxed text-ink">
-        Every week, a clear-eyed look at one way AI is meeting real needs in the
-        field — what's working, what isn't, and what it means for the organizations
-        and communities involved. Practical, honest, and grounded in practice.
-      </p>
-
-      <!-- Three short points. Edit the heading + text of each one freely; the big
-           serif numbers (01/02/03) are just for an editorial feel. -->
-      <div class="mt-12 grid gap-10 sm:grid-cols-3">
-        <div>
-          <p class="font-serif text-3xl text-blue">01</p>
-          <h3 class="mt-3 text-lg font-semibold">Field reports</h3>
-          <p class="mt-2 text-base leading-relaxed text-muted">
-            Real stories from organizations putting AI to work — in their own words,
-            not a vendor's.
-          </p>
-        </div>
-        <div>
-          <p class="font-serif text-3xl text-blue">02</p>
-          <h3 class="mt-3 text-lg font-semibold">Honest assessments</h3>
-          <p class="mt-2 text-base leading-relaxed text-muted">
-            What it cost, what broke, and where the tools fall short — evidence over
-            enthusiasm.
-          </p>
-        </div>
-        <div>
-          <p class="font-serif text-3xl text-blue">03</p>
-          <h3 class="mt-3 text-lg font-semibold">Practical takeaways</h3>
-          <p class="mt-2 text-base leading-relaxed text-muted">
-            Clear lessons you can apply to your own work, whatever your mission or
-            budget.
-          </p>
-        </div>
+  <!-- ===== 3. More from the field (story grid) ===== -->
+  <section class="border-t border-navy/10">
+    <div class="mx-auto max-w-5xl px-6 py-12">
+      <p class="dateline">More from the field</p>
+      <div class="mt-8 grid gap-x-10 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
+        {
+          more.map((issue) => (
+            <article>
+              <p class="dateline">{issue.section} —</p>
+              <h3 class="mt-2">
+                <a
+                  href={linkFor(issue)}
+                  class="font-display text-xl leading-snug text-navy transition-colors hover:text-blue"
+                >
+                  {issue.title}
+                </a>
+              </h3>
+              <p class="mt-2 text-base leading-relaxed text-muted">{issue.excerpt}</p>
+              <p class="mt-3 text-xs text-muted">{fmt(issue.date)}</p>
+            </article>
+          ))
+        }
       </div>
+    </div>
+  </section>
 
-      <p class="mt-12">
-        <a href="/about" class="text-blue hover:underline">
-          More about the mission &rarr;
-        </a>
+  <!-- ===== 4. New-here band (explainer + subscribe) ===== -->
+  <section class="border-t border-navy/10 bg-mist">
+    <div class="mx-auto max-w-5xl px-6 py-16">
+      <p class="dateline">New here —</p>
+      <h2 class="section-title mt-3 max-w-2xl">
+        How the social impact sector actually uses AI.
+      </h2>
+      <p class="mt-4 max-w-2xl text-ink">
+        The Practitioners is a weekly publication for nonprofit operators, social
+        enterprise leaders, and humanitarian workers. Not the hype — the real workflows,
+        tools, and decisions, reported from the field.
       </p>
+      <div class="mt-8">
+        <a
+          href={site.substackUrl}
+          class="inline-block rounded-md bg-blue px-6 py-3 font-medium text-white transition-colors hover:bg-navy"
+        >
+          Subscribe on Substack
+        </a>
+        <p class="mt-4 text-sm text-muted">
+          Free to read &middot; A new issue every week &middot; Unsubscribe anytime
+        </p>
+      </div>
     </div>
   </section>
 </BaseLayout>

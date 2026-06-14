@@ -1,0 +1,90 @@
+---
+/*
+  Tools page  (lives at  /tools  )
+  --------------------------------
+  A VISUAL PLACEHOLDER only — no real directory or backend yet. Edit the example tools
+  in the `tools` array below. Later, each tool could gain an `href` linking to a full
+  review on the site.
+*/
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+// Example tools (placeholders, not endorsements). Edit freely.
+const tools = [
+  {
+    name: "Whisper",
+    category: "Transcription",
+    cost: "Free",
+    blurb: "Open-source speech-to-text; solid for interviews, meetings, and field recordings.",
+  },
+  {
+    name: "Claude",
+    category: "Writing & analysis",
+    cost: "Freemium",
+    blurb: "Drafting, summarising, and reasoning over long documents and reports.",
+  },
+  {
+    name: "Ollama",
+    category: "Local AI",
+    cost: "Free",
+    blurb: "Run models on your own laptop — useful where data can't leave the building.",
+  },
+  {
+    name: "Otter",
+    category: "Meeting notes",
+    cost: "Freemium",
+    blurb: "Live transcripts and summaries for calls and team meetings.",
+  },
+  {
+    name: "Datawrapper",
+    category: "Charts & maps",
+    cost: "Freemium",
+    blurb: "Make clean, credible charts for reports and grant applications.",
+  },
+  {
+    name: "DeepL",
+    category: "Translation",
+    cost: "Freemium",
+    blurb: "Accurate translation for multilingual outreach and documents.",
+  },
+];
+---
+
+<BaseLayout title="Tools — The Practitioners">
+  <section class="mx-auto max-w-5xl px-6 pt-12 pb-8 md:pt-16">
+    <p class="dateline">Tool directory —</p>
+    <h1 class="page-title mt-3">Tools</h1>
+    <p class="lead mt-5 max-w-2xl">
+      Practical AI tools, reviewed in plain language for the nonprofit and humanitarian
+      sector.
+    </p>
+
+    <!-- Clear "coming soon" state -->
+    <div class="mt-8 rounded-lg border border-navy/10 bg-mist p-5">
+      <p class="dateline">Coming soon —</p>
+      <p class="mt-2 max-w-2xl text-base text-ink">
+        We're building a directory of AI tools with honest, sector-specific reviews. The
+        tools below are examples — they're not endorsements.
+      </p>
+    </div>
+
+    <!-- Example tools -->
+    <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      {
+        tools.map((tool) => (
+          <article class="rounded-lg border border-navy/10 p-6 transition-colors hover:border-navy/25">
+            <div class="flex items-start justify-between gap-3">
+              <h2 class="font-display text-lg leading-snug text-navy">{tool.name}</h2>
+              <span class="dateline whitespace-nowrap rounded-full border border-navy/15 px-3 py-1 text-[0.7rem] text-muted">
+                {tool.cost}
+              </span>
+            </div>
+            <p class="dateline mt-2 text-[0.7rem]">{tool.category}</p>
+            <p class="mt-3 text-base leading-relaxed text-ink/90">{tool.blurb}</p>
+          </article>
+        ))
+      }
+    </div>
+
+    <p class="mt-8 text-sm text-muted">Examples only — not endorsements.</p>
+  </section>
+</BaseLayout>

@@ -1,46 +1,135 @@
 /*
   Global styles for The Practitioners.
   -------------------------------------
-  This file does two things:
-  1. Loads Tailwind CSS (the utility classes used throughout the pages).
-  2. Defines our design "tokens" — the brand colors and fonts — in one place.
+  1. Loads Tailwind CSS (the utility classes used in the pages).
+  2. Defines our design "tokens" — brand colors and fonts — in one place.
+  3. Sets base typography + a few reusable editorial classes (.dateline, .masthead…).
 
-  To change the look of the whole site, edit the values in the @theme block below.
+  To re-skin the whole site, edit the @theme values below.
 */
 
 @import "tailwindcss";
 
 @theme {
-  /* Brand colors. Use them in markup as e.g. text-blue, bg-cream, border-navy. */
-  --color-blue: #2563EB; /* primary — buttons, links */
-  --color-navy: #1E3A8A; /* deep accent — headings, hovers */
-  --color-cream: #FBF7EE; /* warm background accent */
+  /* --- Colors (see the design plan for how each is meant to be used) --- */
+  --color-navy: #1e3a8a;   /* lead "ink voice" — masthead, headings */
+  --color-blue: #2563eb;   /* small accent only — links, datelines, focus */
+  --color-paper: #ffffff;  /* main page background — crisp white */
+  --color-mist: #f4f6fa;   /* subtle cool grey — section bands, cards, accents */
+  --color-ink: #14161d;    /* body text (cool near-black) */
+  --color-muted: #5a6072;  /* secondary text, metadata, faint rules */
 
-  /* Neutral text colors for comfortable reading. */
-  --color-ink: #1A1A1A; /* near-black body text */
-  --color-muted: #5B5B5B; /* softer grey for secondary text */
-
-  /* Fonts. Fraunces = editorial serif (headings); Inter = clean sans (body).
-     The actual font files are loaded in src/layouts/BaseLayout.astro.
-     To swap fonts, change both here and the <link> in that file. */
-  --font-serif: "Fraunces", Georgia, "Times New Roman", serif;
-  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  /* --- Fonts --- */
+  /* Newsreader = editorial serif (display). Hanken Grotesk = humanist sans (body).
+     The font files are loaded in src/layouts/BaseLayout.astro. */
+  --font-display: "Newsreader", Georgia, "Times New Roman", serif;
+  --font-sans: "Hanken Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
-/* Base defaults applied to every page. */
-html {
-  scroll-behavior: smooth;
+/* --- Base document ---
+   These go inside @layer base so that Tailwind utility classes (e.g. text-white,
+   text-muted) still win over them when used in the markup. */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.7;
+    color: var(--color-ink);
+    background-color: var(--color-paper);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Headings use the editorial serif, in navy. Sizes are set per-use below. */
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    line-height: 1.15;
+    color: var(--color-navy);
+  }
+
+  /* Default link color (mainly for prose links). Nav/buttons override with utilities. */
+  a {
+    color: var(--color-blue);
+  }
 }
 
-body {
-  font-family: var(--font-sans);
-  color: var(--color-ink);
-  background-color: #ffffff;
-  -webkit-font-smoothing: antialiased;
+/* --- Accessibility: a clear, visible keyboard focus ring (in blue) --- */
+:focus-visible {
+  outline: 2px solid var(--color-blue);
+  outline-offset: 3px;
+  border-radius: 2px;
 }
 
-/* Headings use the editorial serif by default. */
-h1, h2, h3 {
-  font-family: var(--font-serif);
-  color: var(--color-navy);
+/* --- Respect users who prefer less motion --- */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ============================================================
+   Reusable editorial classes (in the components layer so utilities can
+   still override individual properties when needed).
+   ============================================================ */
+@layer components {
+  /* THE SIGNATURE: a wire-service "dateline" label.
+     Use it before headlines and section openers, e.g.
+     <p class="dateline">From the field —</p>  */
+  .dateline {
+    font-family: var(--font-sans);
+    font-weight: 600;
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-blue);
+  }
+
+  /* The big nameplate on the home page. */
+  .masthead {
+    font-size: clamp(2.75rem, 6vw, 4.75rem);
+    line-height: 1.05;
+    letter-spacing: -0.015em;
+  }
+
+  /* Page titles on inner pages (About, Writing). */
+  .page-title {
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    letter-spacing: -0.01em;
+  }
+
+  /* Section headings (H2). */
+  .section-title {
+    font-size: 1.625rem;
+  }
+
+  /* The serif "lead" line under a title. */
+  .lead {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: 1.375rem;
+    line-height: 1.5;
+    color: var(--color-ink);
+  }
+
+  /* Short decorative rule (e.g. under the nameplate). */
+  .short-rule {
+    width: 3rem;
+    height: 2px;
+    background-color: var(--color-navy);
+  }
 }
