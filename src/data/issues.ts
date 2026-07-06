@@ -28,42 +28,43 @@ export interface Issue {
 export const issues: Issue[] = [
   {
     featured: true,
-    section: "Field report",
-    date: "2026-06-12",
-    title:
-      "A Nairobi health network triaged 40,000 patients with an AI chatbot — here's what broke",
+    section: "The argument",
+    date: "2026-07-07",
+    title: "Nonprofits aren't failing at AI. They're being rational.",
     excerpt:
-      "A six-month account from the clinic floor: where the tool genuinely helped, where it failed, and what the nurses actually thought.",
+      "Everyone's citing the 92% adoption, 7% transformation gap as a failure of nerve. Read the source and a different story appears: it's a fundraising CRM vendor's report, and cautious, individual, un-restructured AI use is exactly what you'd expect from people carrying real constraints the benchmark ignores.",
+    href: "https://REPLACE-WITH-YOUR-SUBSTACK-POST-URL",
   },
   {
-    section: "On the record",
-    date: "2026-06-05",
-    title: "A food bank automated its intake forms. Demand didn't fall — the paperwork did.",
+    section: "In good company",
+    date: "2026-07-07",
+    title: "Someone else is reading the adoption data the way we are",
     excerpt:
-      "What changed, what didn't, and the hours it gave back to a team of four.",
+      "Susan Mernit takes the Stanford HAI numbers apart and lands where we did: small nonprofits skipped AI governance not out of negligence but because the tools arrived faster than the frameworks, and nobody funded the staff time to build them. Worth reading alongside this week's lead.",
+    href: "https://susanmernit.com/2026/04/2026-ai-index-report-small-nonprofit-leaders/",
   },
   {
-    section: "Tools",
-    date: "2026-05-29",
-    title: "Five transcription tools, tested on accented English by a refugee legal-aid clinic",
-    excerpt: "An honest, plain-language comparison — accuracy, cost, and privacy.",
+    section: "The other side",
+    date: "2026-07-07",
+    title: "When the AI shows up whether you chose it or not",
+    excerpt:
+      "Access Now documents a U.S. nonprofit whose chatbot started producing harmful responses after a routine product update quietly switched on AI features nobody asked for. If this is the downside, the sector's caution starts looking less like timidity and more like sense.",
+    href: "https://www.accessnow.org/ai-infiltrating-humanitarian-aid/",
   },
   {
-    section: "Policy",
-    date: "2026-05-22",
-    title: "What the EU AI Act actually means for a twelve-person charity",
-    excerpt: "The obligations that apply to you, and the ones that don't, without the jargon.",
+    section: "What's working",
+    date: "2026-07-07",
+    title: "A teacher-support tool that scaled because it fit, not because it dazzled",
+    excerpt:
+      "The IRC's aprendIA went from 500 teachers to 4,700 in northeast Nigeria, heading for 22,000, and the lesson its team draws is deliberately unglamorous: it worked because it fit low bandwidth, local languages, and actual educators, not because the technology was clever.",
+    href: "https://restofworld.org/2026/irc-signpost-humanitarian-ai-refugee-assistance/",
   },
   {
-    section: "Analysis",
-    date: "2026-05-15",
-    title: "The quiet cost of 'free' AI pilots for small nonprofits",
-    excerpt: "Who pays when the pilot ends, and how to read the offer before you sign.",
-  },
-  {
-    section: "What to steal",
-    date: "2026-05-08",
-    title: "The prompt a disaster-relief team uses to draft situation reports in minutes",
-    excerpt: "Copy it, adapt it, and the reasoning behind why it works.",
+    section: "Have your say",
+    date: "2026-07-07",
+    title: "NTEN and Bridgespan want to hear how it actually is",
+    excerpt:
+      "There's an open, anonymous survey on the real state of nonprofit AI adoption and governance, feeding a free report this summer. If you want the sector's picture drawn from practitioners rather than vendors, this is five minutes well spent.",
+    href: "https://www.surveymonkey.com/r/5277QR7",
   },
 ];
