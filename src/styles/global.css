@@ -14,7 +14,7 @@
   /* --- Colors (see the design plan for how each is meant to be used) --- */
   --color-navy: #1e3a8a;   /* lead "ink voice" — masthead, headings */
   --color-blue: #2563eb;   /* small accent only — links, datelines, focus */
-  --color-paper: #ffffff;  /* main page background — crisp white */
+  --color-paper: #f9f8f6;  /* main page background — warm off-white */
   --color-mist: #f4f6fa;   /* subtle cool grey — section bands, cards, accents */
   --color-ink: #14161d;    /* body text (cool near-black) */
   --color-muted: #5a6072;  /* secondary text, metadata, faint rules */
