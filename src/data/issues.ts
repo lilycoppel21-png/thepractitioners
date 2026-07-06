@@ -21,6 +21,7 @@ export interface Issue {
   featured?: boolean;
   original?: boolean;
   href?: string;
+  body?: string[]; // full article paragraphs, for original pieces shown on the homepage
 }
 
 export const issues: Issue[] = [
