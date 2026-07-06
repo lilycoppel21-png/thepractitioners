@@ -31,6 +31,12 @@ const fmt = (iso: string) =>
 // Each story links to its own href if set, otherwise to the Substack.
 const linkFor = (i: { href?: string }) => i.href ?? site.substackUrl;
 
+// Extract bare domain for curated links, e.g. "restofworld.org".
+const domainOf = (href: string) => {
+  try { return new URL(href).hostname.replace(/^www\./, ''); }
+  catch { return href; }
+};
+
 // Today's date for the edition bar.
 const today = new Date().toLocaleDateString("en-GB", {
   day: "numeric",
@@ -66,8 +72,13 @@ const today = new Date().toLocaleDateString("en-GB", {
         </h1>
         <p class="lead mt-5 max-w-2xl">{featured.excerpt}</p>
         <p class="mt-5 text-sm text-muted">
-          {fmt(featured.date)} ·
-          <a href={linkFor(featured)} class="text-blue hover:underline">Read on Substack →</a>
+          {fmt(featured.date)}
+          {featured.original
+            ? <> · <span class="font-medium text-navy">The Practitioners · Original</span> · <a href={linkFor(featured)} class="text-blue hover:underline">Read the full piece →</a></>
+            : featured.href
+              ? <> · <a href={featured.href} class="hover:underline">{domainOf(featured.href)}</a></>
+              : <> · <a href={linkFor(featured)} class="text-blue hover:underline">Read on Substack →</a></>
+          }
         </p>
       </article>
 
@@ -85,7 +96,15 @@ const today = new Date().toLocaleDateString("en-GB", {
                 >
                   {issue.title}
                 </a>
-                <p class="mt-1 text-xs text-muted">{fmt(issue.date)}</p>
+                <p class="mt-1 text-xs text-muted">
+                  {fmt(issue.date)}
+                  {issue.original
+                    ? <> · <span class="font-medium text-navy">Original</span></>
+                    : issue.href
+                      ? <> · <a href={issue.href} class="hover:underline">{domainOf(issue.href)}</a></>
+                      : null
+                  }
+                </p>
               </li>
             ))
           }
@@ -113,6 +132,12 @@ const today = new Date().toLocaleDateString("en-GB", {
               </h3>
               <p class="mt-2 text-base leading-relaxed text-muted">{issue.excerpt}</p>
               <p class="mt-3 text-xs text-muted">{fmt(issue.date)}</p>
+              {issue.original
+                ? <p class="mt-1 text-xs"><span class="font-medium text-navy">The Practitioners · Original</span> · <a href={linkFor(issue)} class="text-blue hover:underline">Read the full piece →</a></p>
+                : issue.href
+                  ? <p class="mt-1 text-xs text-muted"><a href={issue.href} class="hover:underline">{domainOf(issue.href)}</a></p>
+                  : null
+              }
             </article>
           ))
         }

@@ -17,13 +17,13 @@ const isActive = (href: string) =>
   <div
     class="mx-auto flex max-w-5xl flex-col items-start gap-3 px-6 py-5 sm:flex-row sm:items-center sm:justify-between sm:gap-4"
   >
-    <!-- Wordmark (nameplate) links back to the home page. -->
-    <a
-      href="/"
-      style="font-family: var(--font-display)"
-      class="whitespace-nowrap text-2xl text-navy sm:text-3xl"
-    >
-      {site.name}
+    <!-- Logo + wordmark link back to the home page. -->
+    <a href="/" class="flex items-center gap-2.5">
+      <img src="/logo.svg" alt="" aria-hidden="true" class="h-10 w-10 flex-shrink-0" />
+      <span
+        style="font-family: var(--font-display)"
+        class="whitespace-nowrap text-2xl text-navy sm:text-3xl"
+      >{site.name}</span>
     </a>
 
     <nav class="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm sm:gap-x-6">
