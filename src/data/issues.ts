@@ -21,7 +21,8 @@ export interface Issue {
   featured?: boolean;
   original?: boolean;
   href?: string;
-  body?: string[]; // full article paragraphs, for original pieces shown on the homepage
+  slug?: string;  // URL slug for original articles, e.g. "adoption-was-the-easy-part"
+  body?: string[]; // full article paragraphs, rendered on /writing/[slug]
 }
 
 export const issues: Issue[] = [
@@ -34,6 +35,7 @@ export const issues: Issue[] = [
     href: "https://REPLACE-WITH-YOUR-SUBSTACK-POST-URL",
     featured: true,
     original: true,
+    slug: "adoption-was-the-easy-part",
     body: [
       "For most people, using AI looks much the same from one day to the next. A paragraph tidied, a document summarised, a first draft pulled together a little faster. It is genuinely useful, and for most of us, that is roughly where it stops.",
       "Across the nonprofit sector, that pattern now has numbers behind it. A 2026 benchmark from the fundraising platform Virtuous, drawn from 346 organisations, found that around 92% of nonprofits use AI in some form, but only about 7% report a major improvement in what their organisation can actually do. Most of the rest report the same thing: small, real efficiency gains, and little that changes the work itself. The report calls it the efficiency plateau.",

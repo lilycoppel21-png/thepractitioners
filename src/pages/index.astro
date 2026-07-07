@@ -31,6 +31,10 @@ const fmt = (iso: string) =>
 // Each story links to its own href if set, otherwise to the Substack.
 const linkFor = (i: { href?: string }) => i.href ?? site.substackUrl;
 
+// Original articles with a slug get an internal page; everything else links out.
+const pageFor = (i: { original?: boolean; slug?: string; href?: string }) =>
+  i.original && i.slug ? `/writing/${i.slug}` : linkFor(i);
+
 // Extract bare domain for curated links, e.g. "restofworld.org".
 const domainOf = (href: string) => {
   try { return new URL(href).hostname.replace(/^www\./, ''); }
@@ -64,38 +68,22 @@ const today = new Date().toLocaleDateString("en-GB", {
         <p class="dateline">{featured.section} —</p>
         <h1 class="mt-3">
           <a
-            href={linkFor(featured)}
+            href={pageFor(featured)}
             class="font-display text-[clamp(2.5rem,4.2vw,3.75rem)] font-medium leading-[1.1] text-navy transition-colors hover:text-blue"
           >
             {featured.title}
           </a>
         </h1>
-        {featured.original && featured.body ? (
-          <>
-            <div class="mt-6 space-y-5 font-display text-[1.1rem] leading-relaxed text-ink">
-              {featured.body.map((para) => <p>{para}</p>)}
-            </div>
-            <p class="mt-8 text-sm text-muted">
-              {fmt(featured.date)} · <span class="font-medium text-navy">The Practitioners · Original</span>
-            </p>
-            <p class="mt-2">
-              <a href={linkFor(featured)} class="text-sm text-blue hover:underline">Read it on Substack →</a>
-            </p>
-          </>
-        ) : (
-          <>
-            <p class="lead mt-5 max-w-2xl">{featured.excerpt}</p>
-            <p class="mt-5 text-sm text-muted">
-              {fmt(featured.date)}
-              {featured.original
-                ? <> · <span class="font-medium text-navy">The Practitioners · Original</span> · <a href={linkFor(featured)} class="text-blue hover:underline">Read the full piece →</a></>
-                : featured.href
-                  ? <> · <a href={featured.href} class="hover:underline">{domainOf(featured.href)}</a></>
-                  : <> · <a href={linkFor(featured)} class="text-blue hover:underline">Read on Substack →</a></>
-              }
-            </p>
-          </>
-        )}
+        <p class="lead mt-5 max-w-2xl">{featured.excerpt}</p>
+        <p class="mt-5 text-sm text-muted">
+          {fmt(featured.date)}
+          {featured.original
+            ? <> · <span class="font-medium text-navy">The Practitioners · Original</span> · <a href={pageFor(featured)} class="text-blue hover:underline">Read the full piece →</a></>
+            : featured.href
+              ? <> · <a href={featured.href} class="hover:underline">{domainOf(featured.href)}</a></>
+              : <> · <a href={linkFor(featured)} class="text-blue hover:underline">Read on Substack →</a></>
+          }
+        </p>
       </article>
 
       <!-- Latest rail -->
@@ -107,7 +95,7 @@ const today = new Date().toLocaleDateString("en-GB", {
               <li class="py-6 first:pt-0">
                 <p class="dateline text-[0.7rem]">{issue.section}</p>
                 <a
-                  href={linkFor(issue)}
+                  href={pageFor(issue)}
                   class="mt-1 block font-display text-xl leading-snug text-navy transition-colors hover:text-blue"
                 >
                   {issue.title}
@@ -140,7 +128,7 @@ const today = new Date().toLocaleDateString("en-GB", {
               <p class="dateline">{issue.section} —</p>
               <h3 class="mt-2">
                 <a
-                  href={linkFor(issue)}
+                  href={pageFor(issue)}
                   class="font-display text-2xl leading-snug text-navy transition-colors hover:text-blue"
                 >
                   {issue.title}

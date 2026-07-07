@@ -1,0 +1,53 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { site } from "../../config";
+import { issues } from "../../data/issues";
+
+export function getStaticPaths() {
+  return issues
+    .filter((i) => i.original && i.slug)
+    .map((i) => ({ params: { slug: i.slug } }));
+}
+
+const { slug } = Astro.params;
+const issue = issues.find((i) => i.slug === slug)!;
+
+const fmt = (iso: string) =>
+  new Date(iso + "T00:00:00").toLocaleDateString("en-GB", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+---
+
+<BaseLayout title={`${issue.title} — ${site.name}`} description={issue.excerpt}>
+  <article class="mx-auto max-w-[680px] px-6 py-16">
+
+    <!-- Kicker + date -->
+    <p class="dateline">{issue.section} · {fmt(issue.date)}</p>
+
+    <!-- Headline -->
+    <h1 class="mt-4 font-display text-[clamp(2rem,4vw,3rem)] font-medium leading-[1.1] text-navy">
+      {issue.title}
+    </h1>
+
+    <!-- Standfirst / excerpt -->
+    <p class="lead mt-6 border-b border-navy/10 pb-8">{issue.excerpt}</p>
+
+    <!-- Full article body -->
+    {issue.body && (
+      <div class="mt-8 space-y-6 font-display text-[1.1rem] leading-relaxed text-ink">
+        {issue.body.map((para) => <p>{para}</p>)}
+      </div>
+    )}
+
+    <!-- Substack link -->
+    <div class="mt-12 border-t border-navy/10 pt-6 flex items-center justify-between text-sm text-muted">
+      <a href="/" class="hover:text-navy transition-colors">← Back to front page</a>
+      {issue.href && (
+        <a href={issue.href} class="text-blue hover:underline">Read it on Substack →</a>
+      )}
+    </div>
+
+  </article>
+</BaseLayout>
