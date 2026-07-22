@@ -4,6 +4,8 @@ import tailwindcss from '@tailwindcss/vite';
 
 import sitemap from '@astrojs/sitemap';
 
+import cloudflare from "@astrojs/cloudflare";
+
 // Astro configuration.
 // - `site` is your final public URL. It's used when Astro generates things like
 //   sitemaps and absolute links. Keep it pointed at your real domain.
@@ -17,4 +19,5 @@ export default defineConfig({
   },
 
   integrations: [sitemap()],
+  adapter: cloudflare()
 });
