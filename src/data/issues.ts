@@ -73,4 +73,20 @@ export const issues: Issue[] = [
       "Fortune reports that newly wealthy AI workers, inspired in part by a tech podcast host's donation match, have channelled millions toward animal-welfare charities like FarmKind. It's an early sign of the estimated $300 billion in AI-linked wealth that could reshape philanthropy's donor base.",
     href: "https://fortune.com/2026/07/30/artifical-intelligence-workers-wealth-influx-rewriting-philanthropy-giving-to-save-factory-farm-animals-openai-anthropic-ipo-wealth/",
   },
+  {
+    section: "In good company",
+    date: "2026-08-07",
+    title: "The $500M “Humanity AI” fund makes its first grants",
+    excerpt:
+      "Ten major foundations — MacArthur, Ford, Mellon, Mozilla, Omidyar and others — have begun disbursing their five-year, $500M pledge, announcing more than $18M in pooled grants toward journalism, workers’ rights, democratic institutions and education in the AI era.",
+    href: "https://www.luminafoundation.org/news-and-views/humanity-ai-announces-more-than-18-million-in-new-grants-to-shape-ai-for-the-public-good/",
+  },
+  {
+    section: "Worth reading",
+    date: "2026-08-07",
+    title: "How foundations and nonprofits are really thinking about AI",
+    excerpt:
+      "A new study from the Center for Effective Philanthropy digs into how grantmakers and nonprofits are actually approaching AI — where they see promise, where they hold back, and why most are moving cautiously.",
+    href: "https://cep.org/report-backpacks/ai-with-purpose-how-foundations-and-nonprofits-are-thinking-about-and-using-artificial-intelligence/",
+  },
 ];
