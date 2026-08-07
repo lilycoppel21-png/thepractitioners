@@ -1,0 +1,39 @@
+name: Email me new curation PRs
+
+# When the curation bot opens a "daily-curation-*" pull request, email a reminder
+# to review it. Only sends once the MAIL_USERNAME / MAIL_PASSWORD secrets are set
+# (see repo Settings -> Secrets and variables -> Actions).
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  notify:
+    if: startsWith(github.head_ref, 'daily-curation')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check email is configured
+        id: cfg
+        run: echo "ready=${{ secrets.MAIL_PASSWORD != '' }}" >> "$GITHUB_OUTPUT"
+
+      - name: Send notification email
+        if: steps.cfg.outputs.ready == 'true'
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          from: The Practitioners <${{ secrets.MAIL_USERNAME }}>
+          to: lilycoppel21@gmail.com
+          subject: "📋 New stories to review — ${{ github.event.pull_request.title }}"
+          body: |
+            A new batch of curated stories is ready for you to review and publish.
+
+            Review & merge here:
+            ${{ github.event.pull_request.html_url }}
+
+            ----------------------------------------
+            ${{ github.event.pull_request.body }}
