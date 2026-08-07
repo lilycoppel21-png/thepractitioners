@@ -50,35 +50,27 @@ export const issues: Issue[] = [
     ],
   },
   {
-    section: "In good company",
-    date: "2026-07-07",
-    title: "Susan Mernit reads the Stanford AI numbers and reaches our conclusion",
+    section: "Field report",
+    date: "2026-08-03",
+    title: "In Somalia, AI-powered hunger tracking is helping the WFP decide where food aid goes",
     excerpt:
-      "She argues small nonprofits skipped AI governance not out of negligence but because the tools arrived faster than anyone funded the staff time to handle them. Worth reading next to this week's lead.",
-    href: "https://susanmernit.com/2026/04/2026-ai-index-report-small-nonprofit-leaders/",
+      "The World Food Programme's HungerMap Live now uses predictive AI to flag which Somali districts need help before conditions worsen; in one case it triggered food assistance for 48,000 people and nutrition support for 3,000 women and children. The agency still reaches only one in ten people facing crisis-level hunger in the country.",
+    href: "https://news.un.org/en/story/2026/08/1168066",
   },
   {
     section: "The other side",
-    date: "2026-07-07",
-    title: "A product update turned a nonprofit's chatbot harmful",
+    date: "2026-07-28",
+    title: "Some nonprofit newsrooms are gaining readers even as AI search reshapes traffic",
     excerpt:
-      "Access Now documents a US nonprofit whose chatbot began giving misleading and harmful answers after a routine update quietly switched on AI features nobody chose. When this is the downside, sector caution reads as sense, not timidity.",
-    href: "https://www.accessnow.org/ai-infiltrating-humanitarian-aid/",
+      "Amid broader fears that Google's AI Overviews would starve publishers of clicks, Nieman Lab reports some nonprofit news outlets, including VTDigger, have actually seen traffic surge via Google Discover. A reminder that AI's effects on the sector rarely run in only one direction.",
+    href: "https://www.niemanlab.org/2026/07/despite-concerns-about-ai-overviews-some-nonprofit-news-outlets-see-a-surge-in-search-traffic/",
   },
   {
-    section: "What's working",
-    date: "2026-07-07",
-    title: "A teacher-support AI reaches 4,700 teachers in northeast Nigeria",
+    section: "Follow the money",
+    date: "2026-07-30",
+    title: "AI industry wealth is quietly becoming a new source of philanthropic funding",
     excerpt:
-      "The IRC's aprendIA grew from 500 teachers toward 22,000, and its team credits the fit over the technology: low bandwidth, local languages, and educators in the room, not a clever model.",
-    href: "https://restofworld.org/2026/irc-signpost-humanitarian-ai-refugee-assistance/",
-  },
-  {
-    section: "Have your say",
-    date: "2026-07-07",
-    title: "NTEN and Bridgespan survey nonprofits on the real state of AI",
-    excerpt:
-      "An open, anonymous survey feeding a free report this summer. If you want the sector's picture drawn from practitioners rather than vendors, it's five minutes well spent.",
-    href: "https://www.surveymonkey.com/r/5277QR7",
+      "Fortune reports that newly wealthy AI workers, inspired in part by a tech podcast host's donation match, have channelled millions toward animal-welfare charities like FarmKind. It's an early sign of the estimated $300 billion in AI-linked wealth that could reshape philanthropy's donor base.",
+    href: "https://fortune.com/2026/07/30/artifical-intelligence-workers-wealth-influx-rewriting-philanthropy-giving-to-save-factory-farm-animals-openai-anthropic-ipo-wealth/",
   },
 ];
