@@ -50,43 +50,27 @@ export const issues: Issue[] = [
     ],
   },
   {
-    section: "Field report",
-    date: "2026-08-03",
-    title: "In Somalia, AI-powered hunger tracking is helping the WFP decide where food aid goes",
-    excerpt:
-      "The World Food Programme's HungerMap Live now uses predictive AI to flag which Somali districts need help before conditions worsen; in one case it triggered food assistance for 48,000 people and nutrition support for 3,000 women and children. The agency still reaches only one in ten people facing crisis-level hunger in the country.",
-    href: "https://news.un.org/en/story/2026/08/1168066",
-  },
-  {
     section: "The other side",
-    date: "2026-07-28",
-    title: "Some nonprofit newsrooms are gaining readers even as AI search reshapes traffic",
-    excerpt:
-      "Amid broader fears that Google's AI Overviews would starve publishers of clicks, Nieman Lab reports some nonprofit news outlets, including VTDigger, have actually seen traffic surge via Google Discover. A reminder that AI's effects on the sector rarely run in only one direction.",
-    href: "https://www.niemanlab.org/2026/07/despite-concerns-about-ai-overviews-some-nonprofit-news-outlets-see-a-surge-in-search-traffic/",
-  },
-  {
-    section: "Follow the money",
-    date: "2026-07-30",
-    title: "AI industry wealth is quietly becoming a new source of philanthropic funding",
-    excerpt:
-      "Fortune reports that newly wealthy AI workers, inspired in part by a tech podcast host's donation match, have channelled millions toward animal-welfare charities like FarmKind. It's an early sign of the estimated $300 billion in AI-linked wealth that could reshape philanthropy's donor base.",
-    href: "https://fortune.com/2026/07/30/artifical-intelligence-workers-wealth-influx-rewriting-philanthropy-giving-to-save-factory-farm-animals-openai-anthropic-ipo-wealth/",
-  },
-  {
-    section: "In good company",
     date: "2026-08-07",
-    title: "The $500M “Humanity AI” fund makes its first grants",
+    title: "AI's new millionaires want to disrupt philanthropy. They should fund what already exists",
     excerpt:
-      "Ten major foundations — MacArthur, Ford, Mellon, Mozilla, Omidyar and others — have begun disbursing their five-year, $500M pledge, announcing more than $18M in pooled grants toward journalism, workers’ rights, democratic institutions and education in the AI era.",
-    href: "https://www.luminafoundation.org/news-and-views/humanity-ai-announces-more-than-18-million-in-new-grants-to-shape-ai-for-the-public-good/",
+      "As SpaceX's IPO mints thousands of new millionaires, with Anthropic and OpenAI staff expected to follow, two nonprofit leaders push back on Silicon Valley's instinct to rebuild philanthropy from scratch, pointing to a US nonprofit sector that already moves $600 billion a year and has helped eradicate smallpox and lift a billion people out of poverty.",
+    href: "https://fortune.com/2026/08/07/ai-wealth-philanthropy-nonprofits/",
   },
   {
     section: "Worth reading",
-    date: "2026-08-07",
-    title: "How foundations and nonprofits are really thinking about AI",
+    date: "2026-08-03",
+    title: "AI translators are getting more fluent — but communication is never just a matter of words",
     excerpt:
-      "A new study from the Center for Effective Philanthropy digs into how grantmakers and nonprofits are actually approaching AI — where they see promise, where they hold back, and why most are moving cautiously.",
-    href: "https://cep.org/report-backpacks/ai-with-purpose-how-foundations-and-nonprofits-are-thinking-about-and-using-artificial-intelligence/",
+      "Writing in The Conversation, researchers warn that fluent AI speech translation can still miss hesitation, tone and ambiguity that matter in health, legal and social-service settings, and that errors fall hardest on speakers of underrepresented languages, exactly the population many public and humanitarian services rely on translation to reach.",
+    href: "https://theconversation.com/ai-translators-are-getting-more-fluent-but-communication-is-never-just-a-matter-of-words-288739",
+  },
+  {
+    section: "Field report",
+    date: "2026-07-27",
+    title: "What happens when AI chatbots handle a mental health crisis?",
+    excerpt:
+      "NPR's Consider This looks at what happens when people in psychological crisis turn to general-purpose AI chatbots instead of trained counselors or crisis lines, and asks what obligations AI companies and mental-health nonprofits now share for outcomes neither was originally built to handle.",
+    href: "https://www.npr.org/2026/07/27/nx-s1-5906805/what-happens-when-ai-chatbots-handle-a-mental-health-crisis",
   },
 ];
