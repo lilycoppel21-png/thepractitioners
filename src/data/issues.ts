@@ -50,28 +50,12 @@ export const issues: Issue[] = [
     ],
   },
   {
-    section: "On the ground",
-    date: "2026-08-09",
-    title: "China-Tanzania healthcare cooperation brings AI-powered diagnosis to patients",
-    excerpt:
-      "At a hospital in Zanzibar, Chinese medical-team radiologists are pairing AI-assisted image analysis with remote specialist review from a partner hospital in China, now standard practice at the facility. A reminder that AI's spread into African healthcare is running through more channels than the US and European players who dominate the coverage.",
-    href: "https://english.news.cn/20260809/8b307143488346bb9383fcb0df158a4b/c.html",
-  },
-  {
     section: "The other side",
     date: "2026-08-07",
     title: "AI's new millionaires want to disrupt philanthropy. They should fund what already exists",
     excerpt:
       "As SpaceX's IPO mints thousands of new millionaires, with Anthropic and OpenAI staff expected to follow, two nonprofit leaders push back on Silicon Valley's instinct to rebuild philanthropy from scratch, pointing to a US nonprofit sector that already moves $600 billion a year and has helped eradicate smallpox and lift a billion people out of poverty.",
     href: "https://fortune.com/2026/08/07/ai-wealth-philanthropy-nonprofits/",
-  },
-  {
-    section: "What's working",
-    date: "2026-08-04",
-    title: "What AI and accessibility actually looks like, according to disabled users",
-    excerpt:
-      "A new report from Disability Belongs and the Consumer Technology Association skips speculation in favor of case studies: how people with disabilities are actually using, adapting to, and evaluating AI tools across transportation, daily living, healthcare and employment today.",
-    href: "https://www.disabilitybelongs.org/2026/08/ai-and-accessibility/",
   },
   {
     section: "Worth reading",
