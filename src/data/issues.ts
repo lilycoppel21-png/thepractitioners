@@ -51,26 +51,18 @@ export const issues: Issue[] = [
   },
   {
     section: "The other side",
-    date: "2026-08-07",
-    title: "AI's new millionaires want to disrupt philanthropy. They should fund what already exists",
+    date: "2026-08-08",
+    title: "An economics journal pushes back on the World Bank's AI roadmap for the developing world",
     excerpt:
-      "As SpaceX's IPO mints thousands of new millionaires, with Anthropic and OpenAI staff expected to follow, two nonprofit leaders push back on Silicon Valley's instinct to rebuild philanthropy from scratch, pointing to a US nonprofit sector that already moves $600 billion a year and has helped eradicate smallpox and lift a billion people out of poverty.",
-    href: "https://fortune.com/2026/08/07/ai-wealth-philanthropy-nonprofits/",
+      "The World Bank's new World Development Report urges poorer countries to adopt and adapt existing AI tools rather than chase frontier models of their own. An editorial in Economic and Political Weekly counters that the advice underestimates how fast the technology is moving and skates past the political and geopolitical realities of depending on AI built elsewhere, including for a country like India.",
+    href: "https://www.epw.in/journal/2026/32/editorials/world-development-report-ai.html",
   },
   {
-    section: "Worth reading",
-    date: "2026-08-03",
-    title: "AI translators are getting more fluent — but communication is never just a matter of words",
+    section: "Policy watch",
+    date: "2026-08-06",
+    title: "California moves to stop AI chatbots from posing as therapists",
     excerpt:
-      "Writing in The Conversation, researchers warn that fluent AI speech translation can still miss hesitation, tone and ambiguity that matter in health, legal and social-service settings, and that errors fall hardest on speakers of underrepresented languages, exactly the population many public and humanitarian services rely on translation to reach.",
-    href: "https://theconversation.com/ai-translators-are-getting-more-fluent-but-communication-is-never-just-a-matter-of-words-288739",
-  },
-  {
-    section: "Field report",
-    date: "2026-07-27",
-    title: "What happens when AI chatbots handle a mental health crisis?",
-    excerpt:
-      "NPR's Consider This looks at what happens when people in psychological crisis turn to general-purpose AI chatbots instead of trained counselors or crisis lines, and asks what obligations AI companies and mental-health nonprofits now share for outcomes neither was originally built to handle.",
-    href: "https://www.npr.org/2026/07/27/nx-s1-5906805/what-happens-when-ai-chatbots-handle-a-mental-health-crisis",
+      "CalMatters reports on a new California bill that would bar companies from marketing chatbots as therapy and set rules for how AI can be used in clinical settings, with state senator Steve Padilla arguing AI should support clinicians and administrative work but not practice psychotherapy itself.",
+    href: "https://calmatters.org/health/mental-health/2026/08/at-therapists-chatbot-mental-health/",
   },
 ];
