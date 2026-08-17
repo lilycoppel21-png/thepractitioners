@@ -50,27 +50,27 @@ export const issues: Issue[] = [
     ],
   },
   {
-    section: "The other side",
-    date: "2026-08-07",
-    title: "AI's new millionaires want to disrupt philanthropy. They should fund what already exists",
+    section: "Follow the money",
+    date: "2026-08-15",
+    title: "AI is creating a new wave of philanthropists. The system they're walking into is broken",
     excerpt:
-      "As SpaceX's IPO mints thousands of new millionaires, with Anthropic and OpenAI staff expected to follow, two nonprofit leaders push back on Silicon Valley's instinct to rebuild philanthropy from scratch, pointing to a US nonprofit sector that already moves $600 billion a year and has helped eradicate smallpox and lift a billion people out of poverty.",
-    href: "https://fortune.com/2026/08/07/ai-wealth-philanthropy-nonprofits/",
+      "Fortune reports that a coming wave of AI-industry wealth is running into philanthropic infrastructure built around donor-advised funds, where more than $300 billion sits in accounts that pay out only around a quarter of their assets in a given year, with no legal requirement to give more.",
+    href: "https://fortune.com/2026/08/15/ai-billionaires-philanthropy-broken/",
   },
   {
-    section: "Worth reading",
-    date: "2026-08-03",
-    title: "AI translators are getting more fluent — but communication is never just a matter of words",
+    section: "Policy watch",
+    date: "2026-08-04",
+    title: "World Bank urges emerging nations to embrace AI amid weak growth",
     excerpt:
-      "Writing in The Conversation, researchers warn that fluent AI speech translation can still miss hesitation, tone and ambiguity that matter in health, legal and social-service settings, and that errors fall hardest on speakers of underrepresented languages, exactly the population many public and humanitarian services rely on translation to reach.",
-    href: "https://theconversation.com/ai-translators-are-getting-more-fluent-but-communication-is-never-just-a-matter-of-words-288739",
+      "Bloomberg covers the World Bank's new World Development Report, which finds low- and middle-income countries face far less job displacement from AI than wealthy ones and argues they should adopt cheap, localized tools for health, education and agriculture rather than compete on data centers and large models.",
+    href: "https://www.bloomberg.com/news/articles/2026-08-04/world-bank-urges-emerging-nations-to-embrace-ai-amid-weak-growth",
   },
   {
     section: "Field report",
-    date: "2026-07-27",
-    title: "What happens when AI chatbots handle a mental health crisis?",
+    date: "2026-08-07",
+    title: "Education's AI 'gold rush' comes with risks for students",
     excerpt:
-      "NPR's Consider This looks at what happens when people in psychological crisis turn to general-purpose AI chatbots instead of trained counselors or crisis lines, and asks what obligations AI companies and mental-health nonprofits now share for outcomes neither was originally built to handle.",
-    href: "https://www.npr.org/2026/07/27/nx-s1-5906805/what-happens-when-ai-chatbots-handle-a-mental-health-crisis",
+      "The Christian Science Monitor reports that US school districts are being courted by an AI-in-education market that barely existed before ChatGPT and is now projected to reach $18.5 billion within a decade, even as a growing body of research warns the tools can erode students' ability to think for themselves.",
+    href: "https://www.csmonitor.com/USA/Education/2026/0807/ai-risks-schools-students",
   },
 ];
