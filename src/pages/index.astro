@@ -3,10 +3,12 @@
   Home page  (lives at  /  )  — the publication FRONT PAGE
   --------------------------------------------------------
   Structure (top to bottom):
-    1. Edition bar      — weekly edition + date + subscribe
-    2. Lead + Latest    — a big featured story, with a "Latest" headline rail beside it
-    3. Story grid       — "More from the field" cards
-    4. New-here band    — a short explainer + subscribe button (cream)
+    1. Edition bar        — weekly edition + date + subscribe
+    2. Lead + Latest      — a big featured story, with a "Latest" headline rail beside it
+    3. Second story band  — other original (self-written) pieces, sized between the
+                             lead headline and the small curated cards below
+    4. Story grid         — "More from the field" curated (non-original) cards
+    5. New-here band      — a short explainer + subscribe button (cream)
 
   The stories come from src/data/issues.ts — edit them there.
 */
@@ -17,8 +19,13 @@ import { issues } from "../data/issues";
 // The lead story = first issue marked featured (falls back to the newest).
 const featured = issues.find((i) => i.featured) ?? issues[0];
 const rest = issues.filter((i) => i !== featured);
-const latest = rest.slice(0, 5); // headline rail
-const more = rest; // grid below
+
+// Our own other pieces get the mid-sized "second story" band; everything else
+// (links to outside coverage) fills the small "Latest" rail and grid below.
+const otherOriginals = rest.filter((i) => i.original);
+const curatedRest = rest.filter((i) => !i.original);
+const latest = curatedRest.slice(0, 5); // headline rail
+const more = curatedRest; // grid below
 
 // Format "2026-06-12" → "12 June 2026".
 const fmt = (iso: string) =>
@@ -117,7 +124,34 @@ const today = new Date().toLocaleDateString("en-GB", {
     </div>
   </section>
 
-  <!-- ===== 3. More from the field (story grid) ===== -->
+  <!-- ===== 3. Second story band (our other original pieces) ===== -->
+  {otherOriginals.length > 0 && (
+    <section class="border-t border-navy/10">
+      <div class="mx-auto max-w-[1200px] px-6 py-12">
+        <div class="space-y-10">
+          {otherOriginals.map((issue) => (
+            <article class="max-w-2xl">
+              <p class="dateline">{issue.section} —</p>
+              <h2 class="mt-2">
+                <a
+                  href={pageFor(issue)}
+                  class="font-display text-[1.75rem] sm:text-3xl font-medium leading-tight text-navy transition-colors hover:text-blue"
+                >
+                  {issue.title}
+                </a>
+              </h2>
+              <p class="mt-3 text-base leading-relaxed text-muted">{issue.excerpt}</p>
+              <p class="mt-3 text-xs text-muted">
+                {fmt(issue.date)} · <span class="font-medium text-navy">The Practitioners · Original</span> · <a href={pageFor(issue)} class="text-blue hover:underline">Read the full piece →</a>
+              </p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- ===== 4. More from the field (story grid) ===== -->
   <section class="border-t border-navy/10">
     <div class="mx-auto max-w-[1200px] px-6 py-14">
       <p class="dateline">More from the field</p>
