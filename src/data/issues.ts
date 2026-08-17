@@ -32,7 +32,7 @@ export const issues: Issue[] = [
     title: "What the next step looks like",
     excerpt:
       "In conversation with Matthias Scheffelmeier, co-founder of ChangemakerXchange, on the gap between using AI to work faster and using it to do something genuinely new — and why the social impact sector may only just be starting to find out which is which.",
-    href: "https://thepractitioners.substack.com/p/REPLACE-WITH-YOUR-SUBSTACK-POST-URL",
+    href: "https://thepractitioners.substack.com/p/what-the-next-step-looks-like",
     featured: true,
     original: true,
     slug: "what-the-next-step-looks-like",
