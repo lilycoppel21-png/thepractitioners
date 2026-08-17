@@ -34,10 +34,17 @@ const fmt = (iso: string) =>
     <!-- Standfirst / excerpt -->
     <p class="lead mt-6 border-b border-navy/10 pb-8">{issue.excerpt}</p>
 
-    <!-- Full article body -->
+    <!-- Full article body. A paragraph starting with "Q: " renders as a bold
+         interview question (prefix stripped); everything else is a normal paragraph. -->
     {issue.body && (
       <div class="mt-8 space-y-6 font-display text-[1.1rem] leading-relaxed text-ink">
-        {issue.body.map((para) => <p>{para}</p>)}
+        {issue.body.map((para) =>
+          para.startsWith("Q: ") ? (
+            <p class="font-semibold text-navy">{para.slice(3)}</p>
+          ) : (
+            <p>{para}</p>
+          )
+        )}
       </div>
     )}
 
