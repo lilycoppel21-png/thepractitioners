@@ -80,27 +80,35 @@ export const issues: Issue[] = [
     ],
   },
   {
-    section: "Follow the money",
-    date: "2026-08-15",
-    title: "AI is creating a new wave of philanthropists. The system they're walking into is broken",
+    section: "The other side",
+    date: "2026-08-09",
+    title: "AI's new millionaires want to disrupt philanthropy. They should fund what already exists",
     excerpt:
-      "Fortune reports that a coming wave of AI-industry wealth is running into philanthropic infrastructure built around donor-advised funds, where more than $300 billion sits in accounts that pay out only around a quarter of their assets in a given year, with no legal requirement to give more.",
-    href: "https://fortune.com/2026/08/15/ai-billionaires-philanthropy-broken/",
+      "Fortune argues that the wave of new wealth flowing out of AI companies risks repeating a familiar mistake: bypassing established nonprofits in favor of fast, direct giving from corporate balance sheets, on the assumption that the sector lacks the talent and speed to deploy capital at scale.",
+    href: "https://fortune.com/2026/08/09/philanthropy-move-fast-break-things-spacex-anthropic-openai/",
   },
   {
-    section: "Policy watch",
-    date: "2026-08-04",
-    title: "World Bank urges emerging nations to embrace AI amid weak growth",
+    section: "Follow the money",
+    date: "2026-08-10",
+    title: "Gates Foundation gives University of Washington a record $540 million",
     excerpt:
-      "Bloomberg covers the World Bank's new World Development Report, which finds low- and middle-income countries face far less job displacement from AI than wealthy ones and argues they should adopt cheap, localized tools for health, education and agriculture rather than compete on data centers and large models.",
-    href: "https://www.bloomberg.com/news/articles/2026-08-04/world-bank-urges-emerging-nations-to-embrace-ai-amid-weak-growth",
+      "Forbes reports on the largest gift in the university's history, a 10-year grant to the Institute for Health Metrics and Evaluation that will expand its global health data and forecasting work and fund AI-enabled tools meant to make that research usable in lower-resource settings.",
+    href: "https://www.forbes.com/sites/michaeltnietzel/2026/08/10/gates-foundation-gives-university-of-washington-a-record-540-million/",
   },
   {
     section: "Field report",
-    date: "2026-08-07",
-    title: "Education's AI 'gold rush' comes with risks for students",
+    date: "2026-08-13",
+    title: "Global grassroots AI groups challenge Big Tech's narrative",
     excerpt:
-      "The Christian Science Monitor reports that US school districts are being courted by an AI-in-education market that barely existed before ChatGPT and is now projected to reach $18.5 billion within a decade, even as a growing body of research warns the tools can erode students' ability to think for themselves.",
-    href: "https://www.csmonitor.com/USA/Education/2026/0807/ai-risks-schools-students",
+      "Rest of World reports on community-led gatherings in Kenya, India and the US trying to build a more critical, locally grounded conversation about AI's impact, even as critics note the groups risk reproducing the same Silicon Valley dynamics they set out to challenge.",
+    href: "https://restofworld.org/2026/global-ai-salons-grassroots-silicon-valley/",
+  },
+  {
+    section: "Worth reading",
+    date: "2026-08-18",
+    title: "She told no one about her agony except ChatGPT. What her death reveals about AI risks",
+    excerpt:
+      "NPR examines the death of a young woman who confided her suicidal thoughts to a ChatGPT persona rather than her therapist, and what it reveals about the limits of AI chatbots as a stand-in for the mental-health safety net, including crisis lines like 988.",
+    href: "https://www.npr.org/2026/08/18/nx-s1-5929575/ai-suicide-risks-mental-health",
   },
 ];
