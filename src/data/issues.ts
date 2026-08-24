@@ -80,35 +80,27 @@ export const issues: Issue[] = [
     ],
   },
   {
-    section: "The other side",
-    date: "2026-08-09",
-    title: "AI's new millionaires want to disrupt philanthropy. They should fund what already exists",
-    excerpt:
-      "Fortune argues that the wave of new wealth flowing out of AI companies risks repeating a familiar mistake: bypassing established nonprofits in favor of fast, direct giving from corporate balance sheets, on the assumption that the sector lacks the talent and speed to deploy capital at scale.",
-    href: "https://fortune.com/2026/08/09/philanthropy-move-fast-break-things-spacex-anthropic-openai/",
-  },
-  {
     section: "Follow the money",
-    date: "2026-08-10",
-    title: "Gates Foundation gives University of Washington a record $540 million",
+    date: "2026-08-15",
+    title: "AI is creating a new wave of philanthropists. The system they're walking into is broken",
     excerpt:
-      "Forbes reports on the largest gift in the university's history, a 10-year grant to the Institute for Health Metrics and Evaluation that will expand its global health data and forecasting work and fund AI-enabled tools meant to make that research usable in lower-resource settings.",
-    href: "https://www.forbes.com/sites/michaeltnietzel/2026/08/10/gates-foundation-gives-university-of-washington-a-record-540-million/",
+      "Fortune reports that the fortunes now flowing out of Anthropic, OpenAI and SpaceX are pushing newly wealthy tech workers toward donor-advised funds, which let them take the tax deduction immediately while deferring, sometimes indefinitely, any actual decision on where the money goes.",
+    href: "https://fortune.com/2026/08/15/ai-billionaires-philanthropy-broken/",
   },
   {
     section: "Field report",
-    date: "2026-08-13",
-    title: "Global grassroots AI groups challenge Big Tech's narrative",
+    date: "2026-08-16",
+    title: "Reimagining healthcare and agriculture on the continent using AI",
     excerpt:
-      "Rest of World reports on community-led gatherings in Kenya, India and the US trying to build a more critical, locally grounded conversation about AI's impact, even as critics note the groups risk reproducing the same Silicon Valley dynamics they set out to challenge.",
-    href: "https://restofworld.org/2026/global-ai-salons-grassroots-silicon-valley/",
+      "Forbes Africa surveys efforts to build affordable, locally tailored AI tools for African farmers and health workers, from early disease detection to models that predict pest outbreaks and climate risk, arguing the opportunity lies in adaptation to local realities rather than importing systems built elsewhere.",
+    href: "https://www.forbesafrica.com/cover-story/2026/08/16/reimagining-healthcare-and-agriculture-on-the-continent-using-ai",
   },
   {
-    section: "Worth reading",
-    date: "2026-08-18",
-    title: "She told no one about her agony except ChatGPT. What her death reveals about AI risks",
+    section: "Policy watch",
+    date: "2026-08-19",
+    title: "World Humanitarian Day: protect aid workers against drones",
     excerpt:
-      "NPR examines the death of a young woman who confided her suicidal thoughts to a ChatGPT persona rather than her therapist, and what it reveals about the limits of AI chatbots as a stand-in for the mental-health safety net, including crisis lines like 988.",
-    href: "https://www.npr.org/2026/08/18/nx-s1-5929575/ai-suicide-risks-mental-health",
+      "Inter Press Service reports on the UN's warning, issued for World Humanitarian Day, that cheap armed drones directed partly by AI are reshaping the risks facing aid workers in Gaza and Sudan, even as the same technologies are floated as tools for mapping needs and improving humanitarian response.",
+    href: "https://www.ipsnews.net/2026/08/world-humanitarian-day-protect-aid-workers-against-drones/",
   },
 ];
