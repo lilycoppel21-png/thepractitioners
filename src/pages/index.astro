@@ -48,21 +48,14 @@ const domainOf = (href: string) => {
   catch { return href; }
 };
 
-// Today's date for the edition bar.
-const today = new Date().toLocaleDateString("en-GB", {
-  day: "numeric",
-  month: "long",
-  year: "numeric",
-});
 ---
 
 <BaseLayout title={`${site.name} — ${site.tagline}`}>
   <!-- ===== 1. Edition bar ===== -->
   <div class="border-b border-navy/10">
     <div
-      class="mx-auto flex max-w-[1200px] flex-wrap items-center justify-between gap-x-4 gap-y-1 px-6 py-3"
+      class="mx-auto flex max-w-[1200px] flex-wrap items-center justify-end gap-x-4 gap-y-1 px-6 py-3"
     >
-      <p class="dateline">Weekly edition · No. 1 · {today}</p>
       <a href={site.substackUrl} class="dateline hover:underline">Subscribe →</a>
     </div>
   </div>
