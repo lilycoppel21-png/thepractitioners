@@ -28,12 +28,39 @@ export interface Issue {
 export const issues: Issue[] = [
   {
     section: "The interview",
+    date: "2026-08-25",
+    title: "Fighting computerized dictators with typewriters",
+    excerpt:
+      "In conversation with Alex Gladstein of The Human Rights Foundation, on why an organisation protecting dissidents' identities has gone all in on AI — just not the mainstream kind.",
+    href: "https://thepractitioners.substack.com/p/fighting-computerized-dictators-with",
+    featured: true,
+    original: true,
+    slug: "fighting-computerized-dictators-with-typewriters",
+    body: [
+      "One of the most common reasons nonprofits give for holding back on AI adoption is that their data is too sensitive. Beneficiary records, donor lists, casework. It is a reasonable concern, and for some organisations it is their biggest. The Human Rights Foundation supports dissidents and activists working against authoritarian governments, with funding, training and campaigning that depend on keeping people's identities safe. A data leak there can endanger the very people the organisation exists to protect.",
+      "You might expect an organisation like that to be the most cautious adopter in the sector. Instead, HRF has gone all in. It runs a program dedicated to getting AI into activists' hands, builds its own tools, and hosts hackathons for people using them in the field. I spoke to Alex Gladstein, HRF's Chief Strategy Officer, about why. As he sees it, organisations like his face a choice between adopting these tools carefully and being outpaced by governments that will use them without hesitation. Refusing them, in his words, is \"fighting computerized dictators with typewriters.\"",
+      "## Why they don't use the mainstream products",
+      "Going all in does not mean using AI the way everyone else does. Gladstein draws a hard line at what he calls corporate AI: the products most of us know, like ChatGPT, Claude and Gemini, which run on the servers of large companies. In his view, human rights organisations cannot responsibly hand their information to those companies, because they share data with governments, respond to censorship requests, and can cut users off. An activist group has to weigh those risks in a way that, as he put it, \"some random software company\" does not.",
+      "He argues that corporate AI is a bad deal for everyone, whatever your line of work, and some would say that position is too strong. But what it did for HRF was to force a discipline few organisations ever go through. With the default products off the table, they had to work out what was still on it: what each tool does, where the data goes, what could leak and how. That exercise is worth doing with any tool an organisation ends up choosing, because it turns adoption from a default into a decision. Gladstein frames it as a question every organisation should be asking itself: how do you bend this technology so that it matches your virtues and values?",
+      "## What they use instead",
+      "HRF's answer starts with open-source AI: models that anyone can inspect and run on their own computers or servers. For everyday research Gladstein suggests Maple, an encrypted chatbot built on open models that cannot see what you type into it. As he put it: \"Maple can't spy on you. It's open. It's wonderful.\" I asked about the trade-off here, whether the tools that protect your data fall short of the ones that don't on quality or cost. Not any more, in his view. For the work most small teams actually do, the private options are now roughly level with the big-name products.",
+      "The bigger project is the personal AI agent. The typical activist, as Gladstein describes them, is \"a Swiss army knife\": running a small organisation, often on the move, doing ten different jobs at once. A chatbot helps that person with one task at a time. An agent remembers, grows with its user, and takes on whole tasks. HRF has built a private one and is putting it in the hands of leading activists first, because, as he told me, \"the agent is the Rubicon moment.\"",
+      "He gave a concrete example of what crossing it looks like: \"It normally takes months of coordination for a nonprofit to create an annual report. If you integrate AI properly, this now takes a couple of hours.\" The operative word is integrate. The hours come back when the AI holds the organisation's knowledge, which is why HRF is building what he calls organisational brains: shared AI memory, rolled out one team at a time, with the aim of covering most of the organisation by the end of the year.",
+      "## What this means if you are not HRF",
+      "Most readers of this publication do not work in human rights, but three things from the conversation apply broadly.",
+      "The first is a question worth asking before adopting any new tool: should this information live on a cloud we don't control? Gladstein often hears organisations reason that they already trust Google with everything, so one more service makes little difference. He thinks that logic runs backwards. Each new place your data sits is a new place it can leak from, so the exposure you have already accepted is even more of a reason to be more careful with the next decision. None of this means abandoning the tools that keep your organisation running. It means having a clear rule about where your most sensitive information is allowed to go, and applying that rule to AI products the same way you would apply it to anything else, keeping in mind that whatever you type into a chatbot is information you have handed over, just as much as a file uploaded to a drive.",
+      "The second is a habit. He told me: \"It's impossible to have discussions about AI if you don't use it every day.\" The judgement these decisions require only develops through use, so his advice is to start with something safe, keep sensitive data out while you learn, and let the understanding build from there.",
+      "He was most emphatic on the third: \"Most people in the nonprofit space aren't using it at all. That's the main mistake.\" Despite his caution about the big platforms, he is still pragmatic about getting started. Experimenting with a mainstream product, without inputting sensitive information, still beats waiting. The tools that respect privacy exist now, the gap between organisations that use them and those that don't is widening, and privacy, however legitimate the concern, does not have to mean inaction.",
+      "A great deal rests on nonprofits that have little to run on: the trust of donors, the data of vulnerable people, services whole communities rely on. That is exactly what these tools can protect and extend when organisations choose them deliberately. HRF's answer to Gladstein's question, how to bend the technology to your values, took its own engineers and a dedicated program. Your organisation's answer might start with an encrypted chatbot and a clear rule about what goes into it. Both are answers, and the second can begin today.",
+    ],
+  },
+  {
+    section: "The interview",
     date: "2026-08-17",
     title: "What the next step looks like",
     excerpt:
       "In conversation with Matthias Scheffelmeier, co-founder of ChangemakerXchange, on the gap between using AI to work faster and using it to do something genuinely new — and why the social impact sector may only just be starting to find out which is which.",
     href: "https://thepractitioners.substack.com/p/what-the-next-step-looks-like",
-    featured: true,
     original: true,
     slug: "what-the-next-step-looks-like",
     body: [
