@@ -107,35 +107,27 @@ export const issues: Issue[] = [
     ],
   },
   {
-    section: "The other side",
-    date: "2026-08-09",
-    title: "AI's new millionaires want to disrupt philanthropy. They should fund what already exists",
+    section: "Field report",
+    date: "2026-08-18",
+    title: "Meta taps disability groups to explore uses for AI glasses",
     excerpt:
-      "Fortune argues that the wave of new wealth flowing out of AI companies risks repeating a familiar mistake: bypassing established nonprofits in favor of fast, direct giving from corporate balance sheets, on the assumption that the sector lacks the talent and speed to deploy capital at scale.",
-    href: "https://fortune.com/2026/08/09/philanthropy-move-fast-break-things-spacex-anthropic-openai/",
+      "Disability Scoop reports that Meta is funding disability advocacy organizations to test its AI-powered smart glasses for accessibility uses, from navigation cues for blind and low-vision users to real-time captioning for people who are deaf or hard of hearing.",
+    href: "https://www.disabilityscoop.com/2026/08/18/meta-taps-disability-groups-to-explore-uses-for-ai-glasses/32130/",
+  },
+  {
+    section: "The other side",
+    date: "2026-08-15",
+    title: "AI is creating a new wave of philanthropists. The system they're walking into is broken",
+    excerpt:
+      "Fortune reports that as AI company IPOs mint a new generation of tech-wealth millionaires and billionaires, the philanthropic infrastructure meant to channel that money into effective giving is straining to keep up, widening the gap between intention and where the money actually lands.",
+    href: "https://fortune.com/2026/08/15/ai-billionaires-philanthropy-broken/",
   },
   {
     section: "Follow the money",
-    date: "2026-08-10",
-    title: "Gates Foundation gives University of Washington a record $540 million",
-    excerpt:
-      "Forbes reports on the largest gift in the university's history, a 10-year grant to the Institute for Health Metrics and Evaluation that will expand its global health data and forecasting work and fund AI-enabled tools meant to make that research usable in lower-resource settings.",
-    href: "https://www.forbes.com/sites/michaeltnietzel/2026/08/10/gates-foundation-gives-university-of-washington-a-record-540-million/",
-  },
-  {
-    section: "Field report",
     date: "2026-08-13",
-    title: "Global grassroots AI groups challenge Big Tech's narrative",
+    title: "OpenAI Foundation pledges $100 million for medical care",
     excerpt:
-      "Rest of World reports on community-led gatherings in Kenya, India and the US trying to build a more critical, locally grounded conversation about AI's impact, even as critics note the groups risk reproducing the same Silicon Valley dynamics they set out to challenge.",
-    href: "https://restofworld.org/2026/global-ai-salons-grassroots-silicon-valley/",
-  },
-  {
-    section: "Worth reading",
-    date: "2026-08-18",
-    title: "She told no one about her agony except ChatGPT. What her death reveals about AI risks",
-    excerpt:
-      "NPR examines the death of a young woman who confided her suicidal thoughts to a ChatGPT persona rather than her therapist, and what it reveals about the limits of AI chatbots as a stand-in for the mental-health safety net, including crisis lines like 988.",
-    href: "https://www.npr.org/2026/08/18/nx-s1-5929575/ai-suicide-risks-mental-health",
+      "The Chronicle of Philanthropy reports on the OpenAI Foundation's new initiative with the Common Health Coalition, which will use AI tools to help under-resourced U.S. states close treatment gaps, starting with an effort to double hepatitis C cure rates across eight states.",
+    href: "https://www.philanthropy.com/news/openai-foundation-pledges-100-million-for-medical-care/",
   },
 ];
