@@ -107,27 +107,35 @@ export const issues: Issue[] = [
     ],
   },
   {
+    section: "Research report",
+    date: "2026-08-30",
+    title: "AI chatbots outperformed search engines against foreign propaganda",
+    excerpt:
+      "NPR and NewsGuard tested six major AI chatbots and four search engines against 30 false narratives pushed by Russia, China and Iran, finding the chatbots more often corrected the false premise while AI-generated search summaries fared worse.",
+    href: "https://www.npr.org/2026/08/30/nx-s1-5876436/chatbots-search-propaganda",
+  },
+  {
+    section: "Policy watch",
+    date: "2026-08-25",
+    title: "UN and Red Cross renew call for rules on autonomous weapons",
+    excerpt:
+      "The Associated Press reports that the United Nations and the International Committee of the Red Cross issued a joint appeal for binding international rules on AI-guided \"killer robot\" weapons systems, warning that a race toward greater autonomy in weapons is already underway ahead of November treaty talks in Geneva.",
+    href: "https://abcnews.com/Technology/wireStory/red-cross-step-call-international-rules-killer-robot-135929888",
+  },
+  {
     section: "Field report",
+    date: "2026-08-19",
+    title: "Google's new AI tool helps fact-checkers spot doctored images",
+    excerpt:
+      "Nieman Lab reports on Backstory, an experimental Google DeepMind tool now used by India Today's fact-checking team to automate provenance checks and reverse image searches, speeding up the verification of deepfakes and out-of-context photos.",
+    href: "https://www.niemanlab.org/2026/08/googles-new-ai-tool-helps-fact-checkers-investigate-ai-fakes/",
+  },
+  {
+    section: "What's working",
     date: "2026-08-18",
     title: "Meta taps disability groups to explore uses for AI glasses",
     excerpt:
       "Disability Scoop reports that Meta is funding disability advocacy organizations to test its AI-powered smart glasses for accessibility uses, from navigation cues for blind and low-vision users to real-time captioning for people who are deaf or hard of hearing.",
     href: "https://www.disabilityscoop.com/2026/08/18/meta-taps-disability-groups-to-explore-uses-for-ai-glasses/32130/",
-  },
-  {
-    section: "The other side",
-    date: "2026-08-15",
-    title: "AI is creating a new wave of philanthropists. The system they're walking into is broken",
-    excerpt:
-      "Fortune reports that as AI company IPOs mint a new generation of tech-wealth millionaires and billionaires, the philanthropic infrastructure meant to channel that money into effective giving is straining to keep up, widening the gap between intention and where the money actually lands.",
-    href: "https://fortune.com/2026/08/15/ai-billionaires-philanthropy-broken/",
-  },
-  {
-    section: "Follow the money",
-    date: "2026-08-13",
-    title: "OpenAI Foundation pledges $100 million for medical care",
-    excerpt:
-      "The Chronicle of Philanthropy reports on the OpenAI Foundation's new initiative with the Common Health Coalition, which will use AI tools to help under-resourced U.S. states close treatment gaps, starting with an effort to double hepatitis C cure rates across eight states.",
-    href: "https://www.philanthropy.com/news/openai-foundation-pledges-100-million-for-medical-care/",
   },
 ];
