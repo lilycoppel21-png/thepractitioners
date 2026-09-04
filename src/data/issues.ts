@@ -107,27 +107,27 @@ export const issues: Issue[] = [
     ],
   },
   {
-    section: "Field report",
-    date: "2026-08-18",
-    title: "Meta taps disability groups to explore uses for AI glasses",
+    section: "The other side",
+    date: "2026-08-31",
+    title: "GiveDirectly's AI experiment left flood victims behind in Nigeria",
     excerpt:
-      "Disability Scoop reports that Meta is funding disability advocacy organizations to test its AI-powered smart glasses for accessibility uses, from navigation cues for blind and low-vision users to real-time captioning for people who are deaf or hard of hearing.",
-    href: "https://www.disabilityscoop.com/2026/08/18/meta-taps-disability-groups-to-explore-uses-for-ai-glasses/32130/",
+      "An investigation by The New Humanitarian found that GiveDirectly's AI-powered flood forecasting program, which sends cash to households ahead of rising water, was designed in ways that excluded some of the area's most vulnerable residents, including people with limited phone access. GiveDirectly updated its public account of the program after being questioned, calling the gaps intentional tradeoffs made to reach more people faster.",
+    href: "https://www.thenewhumanitarian.org/investigations/2026/08/31/givedirectlys-ai-experiment-left-flood-victims-behind-nigeria",
   },
   {
-    section: "The other side",
-    date: "2026-08-15",
-    title: "AI is creating a new wave of philanthropists. The system they're walking into is broken",
+    section: "Worth reading",
+    date: "2026-08-26",
+    title: "AI billionaires could drive African aid surge",
     excerpt:
-      "Fortune reports that as AI company IPOs mint a new generation of tech-wealth millionaires and billionaires, the philanthropic infrastructure meant to channel that money into effective giving is straining to keep up, widening the gap between intention and where the money actually lands.",
-    href: "https://fortune.com/2026/08/15/ai-billionaires-philanthropy-broken/",
+      "Semafor examines how record-breaking IPOs at Anthropic and OpenAI could funnel new philanthropic wealth toward Africa, at a moment when a Lancet Global Health study projects millions of excess deaths from aid defunding and an unusually large Ebola outbreak in the Democratic Republic of Congo has exposed how far surveillance systems have already deteriorated.",
+    href: "https://www.semafor.com/article/08/26/2026/ai-billionaires-could-drive-african-aid-surge",
   },
   {
     section: "Follow the money",
-    date: "2026-08-13",
-    title: "OpenAI Foundation pledges $100 million for medical care",
+    date: "2026-09-01",
+    title: "Coefficient Giving boosts pledge to $1 billion, banking on an AI windfall",
     excerpt:
-      "The Chronicle of Philanthropy reports on the OpenAI Foundation's new initiative with the Common Health Coalition, which will use AI tools to help under-resourced U.S. states close treatment gaps, starting with an effort to double hepatitis C cure rates across eight states.",
-    href: "https://www.philanthropy.com/news/openai-foundation-pledges-100-million-for-medical-care/",
+      "The Chronicle of Philanthropy reports that the grant maker founded by Dustin Moskovitz and Cari Tuna raised its 2026 commitment to GiveWell's recommended global health groups from $175 million to $1 billion, anticipating a wave of giving capacity tied to AI-driven wealth. Its first grant under the expanded pledge is $276 million to fund roughly 90 million insecticide-treated bed nets for the Democratic Republic of Congo.",
+    href: "https://www.philanthropy.com/news/coefficient-giving-boosts-pledge-to-1-billion-banking-on-an-ai-windfall/",
   },
 ];
