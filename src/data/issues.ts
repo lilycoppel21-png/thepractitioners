@@ -107,27 +107,11 @@ export const issues: Issue[] = [
     ],
   },
   {
-    section: "The other side",
-    date: "2026-08-31",
-    title: "GiveDirectly's AI experiment left flood victims behind in Nigeria",
+    section: "Field report",
+    date: "2026-09-02",
+    title: "How AI is playing a growing role in wildfire response",
     excerpt:
-      "An investigation by The New Humanitarian found that GiveDirectly's AI-powered flood forecasting program, which sends cash to households ahead of rising water, was designed in ways that excluded some of the area's most vulnerable residents, including people with limited phone access. GiveDirectly updated its public account of the program after being questioned, calling the gaps intentional tradeoffs made to reach more people faster.",
-    href: "https://www.thenewhumanitarian.org/investigations/2026/08/31/givedirectlys-ai-experiment-left-flood-victims-behind-nigeria",
-  },
-  {
-    section: "Worth reading",
-    date: "2026-08-26",
-    title: "AI billionaires could drive African aid surge",
-    excerpt:
-      "Semafor examines how record-breaking IPOs at Anthropic and OpenAI could funnel new philanthropic wealth toward Africa, at a moment when a Lancet Global Health study projects millions of excess deaths from aid defunding and an unusually large Ebola outbreak in the Democratic Republic of Congo has exposed how far surveillance systems have already deteriorated.",
-    href: "https://www.semafor.com/article/08/26/2026/ai-billionaires-could-drive-african-aid-surge",
-  },
-  {
-    section: "Follow the money",
-    date: "2026-09-01",
-    title: "Coefficient Giving boosts pledge to $1 billion, banking on an AI windfall",
-    excerpt:
-      "The Chronicle of Philanthropy reports that the grant maker founded by Dustin Moskovitz and Cari Tuna raised its 2026 commitment to GiveWell's recommended global health groups from $175 million to $1 billion, anticipating a wave of giving capacity tied to AI-driven wealth. Its first grant under the expanded pledge is $276 million to fund roughly 90 million insecticide-treated bed nets for the Democratic Republic of Congo.",
-    href: "https://www.philanthropy.com/news/coefficient-giving-boosts-pledge-to-1-billion-banking-on-an-ai-windfall/",
+      "Axios reports that AI-powered cameras, satellites and prediction tools are increasingly shaping how western U.S. agencies detect fires and deploy crews, with the nonprofit Watch Duty using Google's Gemini to transcribe fire radio traffic and speed public alerts. Megafire Action's CEO cautions the technology helps prioritize scarce resources but will not by itself solve the underlying wildfire crisis, and federal auditors warn AI can still produce inaccurate forecasts for rare, extreme events.",
+    href: "https://www.axios.com/2026/09/02/ai-wildfire-response-help",
   },
 ];
