@@ -111,7 +111,15 @@ export const issues: Issue[] = [
     date: "2026-09-02",
     title: "How AI is playing a growing role in wildfire response",
     excerpt:
-      "Axios reports that AI-powered cameras, satellites and prediction tools are increasingly shaping how western U.S. agencies detect fires and deploy crews, with the nonprofit Watch Duty using Google's Gemini to transcribe fire radio traffic and speed public alerts. Megafire Action's CEO cautions the technology helps prioritize scarce resources but will not by itself solve the underlying wildfire crisis, and federal auditors warn AI can still produce inaccurate forecasts for rare, extreme events.",
+      "Axios reports that AI-powered cameras, satellites and prediction tools are increasingly shaping how western U.S. agencies detect wildfires and deploy crews, with researchers now exploring machine learning to help fire officials prioritize resources when multiple fires burn at once. Climate change is driving longer, more intense fire seasons, forcing agencies into higher-stakes tradeoffs about where scarce crews go.",
     href: "https://www.axios.com/2026/09/02/ai-wildfire-response-help",
+  },
+  {
+    section: "Follow the money",
+    date: "2026-09-03",
+    title: "Silicon Valley's AI wealth could reshape philanthropy",
+    excerpt:
+      "Coefficient Giving's CEO tells Semafor that stock windfalls tied to Anthropic and OpenAI could add roughly $40 billion a year to American philanthropy if the companies go public, on top of the $370 billion in combined assets already amassed by their founders and staff. Coefficient, on track to give away $2 billion this year and already a major funder of global public health, says nonprofits should start planning now for a wave of giving unlike anything the sector has seen.",
+    href: "https://www.semafor.com/article/09/03/2026/coefficient-givings-ceo-on-silicon-valley-40-billion-philanthropy-boom",
   },
 ];
