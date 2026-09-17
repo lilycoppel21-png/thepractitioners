@@ -107,11 +107,27 @@ export const issues: Issue[] = [
     ],
   },
   {
-    section: "Field report",
-    date: "2026-09-02",
-    title: "How AI is playing a growing role in wildfire response",
+    section: "Follow the money",
+    date: "2026-09-15",
+    title: "Gates Foundation pledges $1 billion to close the global AI equity gap",
     excerpt:
-      "Axios reports that AI-powered cameras, satellites and prediction tools are increasingly shaping how western U.S. agencies detect fires and deploy crews, with the nonprofit Watch Duty using Google's Gemini to transcribe fire radio traffic and speed public alerts. Megafire Action's CEO cautions the technology helps prioritize scarce resources but will not by itself solve the underlying wildfire crisis, and federal auditors warn AI can still produce inaccurate forecasts for rare, extreme events.",
-    href: "https://www.axios.com/2026/09/02/ai-wildfire-response-help",
+      "The Gates Foundation has committed at least $1 billion over two years to expand access to AI in health, education and agriculture across low-income countries, alongside a Goalkeepers report warning that without action within the next 12 to 18 months, the technology risks widening the gap between rich and poor nations rather than closing it.",
+    href: "https://www.bloomberg.com/news/articles/2026-09-15/bill-gates-urges-ai-equity-as-foundation-pledges-1-billion",
+  },
+  {
+    section: "The other side",
+    date: "2026-09-11",
+    title: "The nonprofit AI gap: bosses are bullish, staff are wary",
+    excerpt:
+      "A new survey covered by the Chronicle of Philanthropy finds a wide gap between nonprofit executives and frontline staff on AI: more than 60% of executives see it mainly as a way to ease staff workloads, compared with fewer than half of staff themselves, and most organizations still have no written policy governing its use.",
+    href: "https://www.philanthropy.com/news/the-nonprofit-ai-gap-bosses-are-bullish-staffs-are-wary/",
+  },
+  {
+    section: "Field report",
+    date: "2026-09-10",
+    title: "How AI is changing what Indian nonprofits can deliver",
+    excerpt:
+      "India Development Review reports that nonprofits SEEDS and F4F are combining satellite imagery, weather data and household surveys into AI models that generate hyperlocal risk scores for heat, floods, cyclones and earthquakes, shifting their work from generic climate advice toward identifying which specific households are most vulnerable and why.",
+    href: "https://idronline.org/article/technology/how-ai-is-changing-what-nonprofits-can-deliver/",
   },
 ];
