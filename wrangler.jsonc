@@ -1,0 +1,11 @@
+{
+  // Tells Cloudflare's deploy step (npx wrangler versions upload) where to find
+  // the built site and which existing Worker to deploy it to.
+  // "name" must match the Worker already set up in the Cloudflare dashboard
+  // (thepractitioners.org is attached to it) — don't rename this.
+  "name": "thepractitioners",
+  "compatibility_date": "2026-09-16",
+  "assets": {
+    "directory": "./dist"
+  }
+}
