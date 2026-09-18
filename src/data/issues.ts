@@ -107,11 +107,27 @@ export const issues: Issue[] = [
     ],
   },
   {
-    section: "Field report",
-    date: "2026-09-02",
-    title: "How AI is playing a growing role in wildfire response",
+    section: "By the numbers",
+    date: "2026-09-11",
+    title: "Nonprofit executives are bullish on AI. Frontline staff are not.",
     excerpt:
-      "Axios reports that AI-powered cameras, satellites and prediction tools are increasingly shaping how western U.S. agencies detect fires and deploy crews, with the nonprofit Watch Duty using Google's Gemini to transcribe fire radio traffic and speed public alerts. Megafire Action's CEO cautions the technology helps prioritize scarce resources but will not by itself solve the underlying wildfire crisis, and federal auditors warn AI can still produce inaccurate forecasts for rare, extreme events.",
-    href: "https://www.axios.com/2026/09/02/ai-wildfire-response-help",
+      "A Chronicle of Philanthropy report on a survey of more than 900 nonprofit workers by NTEN and the Bridgespan Group finds executives far more optimistic than staff about AI easing workloads, with staff more worried about its environmental footprint. Most organizations surveyed still have no written AI policy or rollout plan.",
+    href: "https://www.philanthropy.com/news/the-nonprofit-ai-gap-bosses-are-bullish-staffs-are-wary/",
+  },
+  {
+    section: "Follow the money",
+    date: "2026-09-03",
+    title: "The philanthropist getting ready for an AI wealth windfall",
+    excerpt:
+      "Semafor reports that Coefficient Giving CEO Alexander Berger expects prospective Anthropic and OpenAI IPOs to add roughly $40 billion a year to American philanthropy, and argues nonprofits and grantmakers should start preparing now for a new generation of AI-linked donors.",
+    href: "https://www.semafor.com/article/09/03/2026/coefficient-givings-ceo-on-silicon-valley-40-billion-philanthropy-boom",
+  },
+  {
+    section: "The other side",
+    date: "2026-09-03",
+    title: "A grant funder says AI has \"ruined\" its application process",
+    excerpt:
+      "Civil Society reports that the GC Gibson Charitable Trust, a UK funder managing a £16m fund, has stopped taking online applications after being overwhelmed by AI-assisted submissions. Commentators warn that closing the process risks favouring charities already known to funders over those relying on a level playing field.",
+    href: "https://www.civilsociety.co.uk/news/funder-closes-online-applications-and-says-ai-has-ruined-the-process.html",
   },
 ];
