@@ -107,11 +107,35 @@ export const issues: Issue[] = [
     ],
   },
   {
-    section: "Field report",
-    date: "2026-09-02",
-    title: "How AI is playing a growing role in wildfire response",
+    section: "Follow the money",
+    date: "2026-09-15",
+    title: "Gates Foundation pledges $1 billion for equitable AI access",
     excerpt:
-      "Axios reports that AI-powered cameras, satellites and prediction tools are increasingly shaping how western U.S. agencies detect fires and deploy crews, with the nonprofit Watch Duty using Google's Gemini to transcribe fire radio traffic and speed public alerts. Megafire Action's CEO cautions the technology helps prioritize scarce resources but will not by itself solve the underlying wildfire crisis, and federal auditors warn AI can still produce inaccurate forecasts for rare, extreme events.",
-    href: "https://www.axios.com/2026/09/02/ai-wildfire-response-help",
+      "Bloomberg reports that the Gates Foundation's latest Goalkeepers report pledges $1 billion over two years to expand AI access in health, education and agriculture, split roughly 40/40/10/10 across those areas and underlying language data. Bill Gates frames the money as a bet that deliberate investment, not the technology itself, will decide whether AI narrows or widens the gap between rich and poor countries.",
+    href: "https://www.bloomberg.com/news/articles/2026-09-15/bill-gates-urges-ai-equity-as-foundation-pledges-1-billion",
+  },
+  {
+    section: "The other side",
+    date: "2026-09-19",
+    title: "Teachers question Gates Foundation's $400 million school AI push",
+    excerpt:
+      "Fortune reports that teachers are skeptical of the $400 million the Gates Foundation is directing toward AI tutoring tools in classrooms, warning the technology could end up widening the reading and math gaps it is meant to close for students who already have the least support at home.",
+    href: "https://fortune.com/2026/09/19/the-gates-foundation-ai-schools-teachers-warn-gap-reading-math/",
+  },
+  {
+    section: "Worth reading",
+    date: "2026-09-11",
+    title: "Survey finds nonprofit bosses bullish on AI, staff far more wary",
+    excerpt:
+      "The Chronicle of Philanthropy reports on a new NTEN/Bridgespan survey of more than 900 nonprofit staff, in which over 60% of executives said AI eases workloads compared with fewer than half of frontline staff. Most organizations surveyed still have no written AI policy or rollout plan.",
+    href: "https://www.philanthropy.com/news/the-nonprofit-ai-gap-bosses-are-bullish-staffs-are-wary/",
+  },
+  {
+    section: "Policy watch",
+    date: "2026-09-18",
+    title: "Tests find AI election safeguards easy to bypass ahead of November",
+    excerpt:
+      "Just Security reports that researchers testing six popular AI models found their election-related safeguards could be readily bypassed, with the tools still capable of mass-producing convincing disinformation. The findings raise the stakes for civil-society groups monitoring election integrity as voting approaches.",
+    href: "https://www.justsecurity.org/154924/ai-disinformation-2026-midterm-elections/",
   },
 ];
