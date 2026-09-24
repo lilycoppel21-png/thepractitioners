@@ -107,11 +107,35 @@ export const issues: Issue[] = [
     ],
   },
   {
-    section: "Field report",
-    date: "2026-09-02",
-    title: "How AI is playing a growing role in wildfire response",
+    section: "Follow the money",
+    date: "2026-09-24",
+    title: "The Gates Foundation quietly shut a $500 million anti-poverty effort to bet on AI",
     excerpt:
-      "Axios reports that AI-powered cameras, satellites and prediction tools are increasingly shaping how western U.S. agencies detect fires and deploy crews, with the nonprofit Watch Duty using Google's Gemini to transcribe fire radio traffic and speed public alerts. Megafire Action's CEO cautions the technology helps prioritize scarce resources but will not by itself solve the underlying wildfire crisis, and federal auditors warn AI can still produce inaccurate forecasts for rare, extreme events.",
-    href: "https://www.axios.com/2026/09/02/ai-wildfire-response-help",
+      "The Chronicle of Philanthropy reports that Gates wound down nearly a decade of anti-poverty research and safety-net programs, work it credits with unlocking $2.2 billion in benefits for low-income Americans, in favor of a $1 billion AI-focused investment vehicle called NextLadder Ventures, raising questions about what proven, unglamorous programs lose out when a funder chases the AI wave.",
+    href: "https://www.philanthropy.com/news/gates-closed-down-a-half-billion-anti-poverty-effort-and-instead-banked-on-ai/",
+  },
+  {
+    section: "The other side",
+    date: "2026-09-21",
+    title: "An investigation finds AI-powered border towers failed to prevent migrant deaths",
+    excerpt:
+      "MIT Technology Review's investigation, built on data from the nonprofits No More Deaths and Humane Borders, maps nearly 4,000 sites where human remains were found and identifies more than 1,050 deaths within range of U.S. border surveillance towers since 2015, including over 110 near AI-powered towers, pointing to broken equipment, missed detections and unanswered alerts.",
+    href: "https://www.technologyreview.com/2026/09/21/1144166/border-towers-surveillance-investigation/",
+  },
+  {
+    section: "By the numbers",
+    date: "2026-09-15",
+    title: "Nonprofits are adopting AI faster than they can govern it",
+    excerpt:
+      "A new NTEN and Bridgespan survey of nearly 1,000 nonprofit staff and executives, covered by The NonProfit Times, finds 98% of organizations now use AI in some form, but training and written use policies lag well behind, with adoption notably more top-down than bottom-up as frontline staff report far more wariness than their bosses.",
+    href: "https://thenonprofittimes.com/npt_articles/nonprofits-use-of-ai-outstrips-training-and-guidelines/",
+  },
+  {
+    section: "Research report",
+    date: "2026-09-14",
+    title: "A nonprofit review of 20 AI tools finds few ready for the classroom",
+    excerpt:
+      "Education Week reports that Instruction Partners, a nonprofit that evaluated 20 AI learning products across 16 school systems, found general-purpose chatbots like ChatGPT carried more risk for student learning than tools built specifically for instruction, and that none of the products reviewed were yet ready to handle the pedagogical work of teaching on their own.",
+    href: "https://www.edweek.org/technology/new-project-identifies-strengths-and-weaknesses-of-a-collection-of-ai-learning-tools/2026/09",
   },
 ];
