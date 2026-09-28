@@ -107,11 +107,43 @@ export const issues: Issue[] = [
     ],
   },
   {
-    section: "Field report",
-    date: "2026-09-02",
-    title: "How AI is playing a growing role in wildfire response",
+    section: "Follow the money",
+    date: "2026-09-23",
+    title: "Gates Foundation shuts down its anti-poverty program, bets on an AI investment vehicle instead",
     excerpt:
-      "Axios reports that AI-powered cameras, satellites and prediction tools are increasingly shaping how western U.S. agencies detect fires and deploy crews, with the nonprofit Watch Duty using Google's Gemini to transcribe fire radio traffic and speed public alerts. Megafire Action's CEO cautions the technology helps prioritize scarce resources but will not by itself solve the underlying wildfire crisis, and federal auditors warn AI can still produce inaccurate forecasts for rare, extreme events.",
-    href: "https://www.axios.com/2026/09/02/ai-wildfire-response-help",
+      "The Chronicle of Philanthropy reports that the Gates Foundation quietly closed a decade-long, roughly $500 million anti-poverty initiative and redirected its economic-mobility work to NextLadder, an independent investment group that deploys personalized AI tools to help people access benefits, clear debt and find work. Critics are skeptical that a technology injection can address a problem as complex as poverty.",
+    href: "https://www.philanthropy.com/news/gates-closed-down-a-half-billion-anti-poverty-effort-and-instead-banked-on-ai/",
+  },
+  {
+    section: "Field report",
+    date: "2026-09-22",
+    title: "Anthropic and OpenEvidence to bring free clinical AI to nearly 100 low-income countries",
+    excerpt:
+      "In an exclusive Reuters report, Anthropic and medical knowledge platform OpenEvidence say they will offer physicians in about 100 low- and middle-income countries, including Uganda, Haiti and Sudan, free access to an AI-powered clinical decision support tool, aiming to close gaps in access to medical literature and specialist expertise.",
+    href: "https://www.yahoo.com/news/articles/exclusive-anthropic-openevidence-partner-bring-213129315.html",
+  },
+  {
+    section: "Policy watch",
+    date: "2026-09-21",
+    title: "South African civil rights groups demand a halt to the AI data center boom",
+    excerpt:
+      "Rest of World reports that activists in Cape Town are pushing for a national moratorium on new AI data centers, warning that expansion by Microsoft, Amazon and Equinix is straining scarce water and power supplies — one of the first coordinated efforts on the continent to slow AI infrastructure growth.",
+    href: "https://restofworld.org/2026/south-africa-ai-data-center-protests/",
+  },
+  {
+    section: "The other side",
+    date: "2026-09-14",
+    title: "ChatGPT added a crisis-support feature. NPR found it's hard to locate",
+    excerpt:
+      "NPR examined OpenAI's 'Trusted Contact' feature, meant to connect people in mental health crises with someone they trust, and found it difficult for users to find or activate — a gap that matters given how many people now turn to the chatbot to discuss suicide or self-harm.",
+    href: "https://www.houstonpublicmedia.org/npr/2026/09/14/nx-s1-5943118/npr-looked-for-chatgpts-new-crisis-feature-its-hard-to-find/",
+  },
+  {
+    section: "What's working",
+    date: "2026-09-14",
+    title: "Nonprofits are adopting AI faster than they can govern it, new report finds",
+    excerpt:
+      "Nonprofit Quarterly reports that interest in AI has outpaced the infrastructure needed to support it at most organizations, with staff and executives experiencing adoption very differently depending on training and resourcing — but the sector broadly agrees on the fix: clearer guidance and real training.",
+    href: "https://nonprofitquarterly.org/how-nonprofits-adopt-and-govern-ai-insights-from-a-new-report/",
   },
 ];
