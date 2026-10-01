@@ -107,11 +107,35 @@ export const issues: Issue[] = [
     ],
   },
   {
-    section: "Field report",
-    date: "2026-09-02",
-    title: "How AI is playing a growing role in wildfire response",
+    section: "Policy watch",
+    date: "2026-09-30",
+    title: "Right Livelihood Award honors women taking on autocrats, discrimination and unchecked AI",
     excerpt:
-      "Axios reports that AI-powered cameras, satellites and prediction tools are increasingly shaping how western U.S. agencies detect fires and deploy crews, with the nonprofit Watch Duty using Google's Gemini to transcribe fire radio traffic and speed public alerts. Megafire Action's CEO cautions the technology helps prioritize scarce resources but will not by itself solve the underlying wildfire crisis, and federal auditors warn AI can still produce inaccurate forecasts for rare, extreme events.",
-    href: "https://www.axios.com/2026/09/02/ai-wildfire-response-help",
+      "The Associated Press reports that this year's Right Livelihood Award, often called the 'alternative Nobel,' recognized AI researcher Timnit Gebru alongside a Pakistani human rights lawyer, a Georgian democracy group and a network of southern African women farmers, citing Gebru's work exposing AI's human and environmental harms and building community-led alternatives.",
+    href: "https://www.usnews.com/news/world/articles/2026-09-30/right-livelihood-award-honors-women-taking-on-autocrats-discrimination-and-unchecked-ai",
+  },
+  {
+    section: "Field report",
+    date: "2026-09-28",
+    title: "How AI took over a key climate event",
+    excerpt:
+      "CNN reports that artificial intelligence dominated conversation at this year's New York Climate Week, with environmental-justice groups including WE ACT and the Climate Justice Alliance pressing funders and policymakers on the energy and community costs of data centers even as other leaders argued AI is essential to tackling climate change.",
+    href: "https://www.cnn.com/2026/09/28/climate/ai-climate-week-new-york",
+  },
+  {
+    section: "The other side",
+    date: "2026-09-28",
+    title: "Schools are experimenting with AI with little evidence or policy to guide them",
+    excerpt:
+      "NPR reports that U.S. school districts are adopting AI chatbots, lesson planners and other tools largely without evidence of what works, citing a Stanford review of more than 800 academic papers that found research on classroom AI remains extremely limited.",
+    href: "https://www.npr.org/2026/09/28/nx-s1-5759718/ai-schools-experiment-research",
+  },
+  {
+    section: "Worth reading",
+    date: "2026-09-16",
+    title: "How Nonprofits Adopt and Govern AI: Insights from a New Report",
+    excerpt:
+      "Nonprofit Quarterly covers a new NTEN and Bridgespan Group survey of 917 nonprofit staff finding 98% now use AI in some form, yet most organizations lack a dedicated budget, training or governance policy to manage it responsibly.",
+    href: "https://nonprofitquarterly.org/how-nonprofits-adopt-and-govern-ai-insights-from-a-new-report/",
   },
 ];
