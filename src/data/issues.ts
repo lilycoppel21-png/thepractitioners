@@ -107,11 +107,43 @@ export const issues: Issue[] = [
     ],
   },
   {
-    section: "Field report",
-    date: "2026-09-02",
-    title: "How AI is playing a growing role in wildfire response",
+    section: "In good company",
+    date: "2026-10-02",
+    title: "A humanitarian leader makes the case for going all in on AI",
     excerpt:
-      "Axios reports that AI-powered cameras, satellites and prediction tools are increasingly shaping how western U.S. agencies detect fires and deploy crews, with the nonprofit Watch Duty using Google's Gemini to transcribe fire radio traffic and speed public alerts. Megafire Action's CEO cautions the technology helps prioritize scarce resources but will not by itself solve the underlying wildfire crisis, and federal auditors warn AI can still produce inaccurate forecasts for rare, extreme events.",
-    href: "https://www.axios.com/2026/09/02/ai-wildfire-response-help",
+      "In an opinion piece for Fortune, Jeannie Annan, the International Rescue Committee's chief research and innovation officer, argues that humanitarian organizations should be among AI's most active users and frontier testers rather than its most cautious skeptics. She writes that the sector's instinct toward caution, usually justified as protecting vulnerable people, can instead leave the people it serves worse off if careful organizations simply fall behind.",
+    href: "https://fortune.com/2026/10/02/responsible-ai-humanitarian-aid/",
+  },
+  {
+    section: "The pivot",
+    date: "2026-09-23",
+    title: "Gates Foundation closes a half-billion-dollar anti-poverty program, bets on AI instead",
+    excerpt:
+      "The Chronicle of Philanthropy reports that the Gates Foundation has wound down roughly a decade of U.S. anti-poverty research and programming in favor of NextLadder Ventures, a $1 billion, multi-funder effort to deploy personalized AI tools that help people navigate benefits applications, credit problems and job searches at moments of crisis. Critics quoted in the piece are skeptical that software can substitute for the anti-poverty research program it replaces.",
+    href: "https://www.philanthropy.com/news/gates-closed-down-a-half-billion-anti-poverty-effort-and-instead-banked-on-ai/",
+  },
+  {
+    section: "Policy watch",
+    date: "2026-10-02",
+    title: "Why responsible AI in philanthropy has to start with privacy",
+    excerpt:
+      "Writing in Alliance magazine, the author argues that the donor, grantee and case-note data foundations and charities hold is becoming the sector's most exposed asset as AI tools spread, and that protecting it is a governance question rather than a technical one. The piece notes that once a program officer or caseworker pastes sensitive information into a chatbot, what happens to it next depends entirely on that provider's own terms on logging, retention and model training.",
+    href: "https://www.alliancemagazine.org/blog/the-trust-dividend-why-responsible-ai-in-philanthropy-has-to-start-with-privacy/",
+  },
+  {
+    section: "Follow the money",
+    date: "2026-10-02",
+    title: "Change.org bets $100 million on an AI rebuild of its petitions platform",
+    excerpt:
+      "Axios reports that Change.org, the petitions platform that converted to nonprofit ownership in 2021, is investing about $100 million of its own money to rebuild its core product around AI, starting with a copilot that helps petition-writers draft text and identify the right decision-makers to target. Founder Ben Rattray frames the bet as restoring belief that an ordinary person's voice can still move outcomes, even as the organization's own data shows AI-generated petitions tend to underperform human-written ones.",
+    href: "https://www.axios.com/2026/10/02/changeorg-ai-100-million",
+  },
+  {
+    section: "The other side",
+    date: "2026-09-21",
+    title: "Billions in AI border surveillance, but it isn't stopping migrant deaths",
+    excerpt:
+      "A MIT Technology Review investigation cross-references nearly 4,000 locations where migrants' remains were recovered with roughly 600 AI-enabled surveillance towers along the U.S.-Mexico border, finding little evidence that a system built and marketed partly on humanitarian grounds has reduced deaths. It's a sharp counterpoint to the sector's more hopeful narratives about AI-assisted crisis response, and a reminder that the same tools built to help can be redeployed toward enforcement instead.",
+    href: "https://www.technologyreview.com/2026/09/21/1144166/border-towers-surveillance-investigation/",
   },
 ];
