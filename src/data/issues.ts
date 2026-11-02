@@ -31,7 +31,7 @@ export const issues: Issue[] = [
     date: "2026-11-02",
     title: "The Engineer Will See You Now",
     excerpt:
-      "In conversation with Bo Ghirardelli of Sky's the Limit, on how an AI business adviser has members reaching milestones at more than three times the rate they did before.",
+      "In conversation with Bo Ghirardelli of Sky's the Limit",
     href: "https://thepractitioners.substack.com/p/the-engineer-will-see-you-now",
     featured: true,
     original: true,
@@ -56,7 +56,7 @@ export const issues: Issue[] = [
     date: "2026-08-25",
     title: "Fighting computerized dictators with typewriters",
     excerpt:
-      "In conversation with Alex Gladstein of The Human Rights Foundation, on why an organisation protecting dissidents' identities has gone all in on AI, but not the kind you'd expect.",
+      "In conversation with Alex Gladstein of The Human Rights Foundation",
     href: "https://thepractitioners.substack.com/p/fighting-computerized-dictators-with",
     original: true,
     slug: "fighting-computerized-dictators-with-typewriters",
@@ -83,7 +83,7 @@ export const issues: Issue[] = [
     date: "2026-08-17",
     title: "What the next step looks like",
     excerpt:
-      "In conversation with Matthias Scheffelmeier, co-founder of ChangemakerXchange, on the gap between using AI to work faster and using it to do something genuinely new — and why the social impact sector may only just be starting to find out which is which.",
+      "In conversation with Matthias Scheffelmeier of ChangemakerXchange",
     href: "https://thepractitioners.substack.com/p/what-the-next-step-looks-like",
     original: true,
     slug: "what-the-next-step-looks-like",
