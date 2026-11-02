@@ -28,12 +28,36 @@ export interface Issue {
 export const issues: Issue[] = [
   {
     section: "The interview",
+    date: "2026-11-02",
+    title: "The Engineer Will See You Now",
+    excerpt:
+      "In conversation with Bo Ghirardelli of Sky's the Limit",
+    href: "https://thepractitioners.substack.com/p/the-engineer-will-see-you-now",
+    featured: true,
+    original: true,
+    slug: "the-engineer-will-see-you-now",
+    body: [
+      "Bo Ghirardelli is the co-founder and CEO of Sky's the Limit, a free mentorship community for early-stage, low-income entrepreneurs. He has spent fifteen years building it, and lately the organisation has been doing things with AI that are worth knowing about. Since launching CoFounder AI, its AI business adviser, members have been reaching business milestones at more than three times the rate they did before. I spoke to Bo about what made that possible.",
+      "## Six weeks to six days",
+      "Bo is nobody's idea of a technology sceptic. He grew up on science fiction, has been dreaming about advanced technology since he was five, and believes what AI can do for learning is \"literally a miracle\". Even so, through 2022 and 2023, during the birth of modern AI, the team held off on building anything with it. Each time the models improved, they asked themselves whether it was really worth building with yet. With a small engineering team, building early could have meant burning scarce resources on a technology that was changing every day. So instead, everyone experimented on their own and brought their insights back to the team.",
+      "The team finally committed to building in 2025, starting with their internal processes. Bo says they \"completely stopped everything\" and redesigned how their engineers worked, with entirely new workflows and tools, before a single member-facing feature was written. He estimates that the amount of time to complete the same work has gone from six weeks to six days. None of it is accidental: STL treats experimentation as a core value, and the team runs designated weeks where staff must use AI in their own roles and then debrief together on what worked. By Bo's account, the whole team is now enthusiastic about it, at a time when many organisations rolling out AI internally have met pushback from their staff.",
+      "If you run a team of any kind, this is the idea that should jump the queue, and the best part is that it needs no additional budget. Most organisations keep their teams siloed, each department holding its own meetings, but STL deliberately mixes them. A colleague brings a problem they have struggled with for long enough to know it inside out, and explains exactly what a fix would need to do. An engineer, who knows what AI can make possible, builds them a tailored solution on the spot. Nobody has to be persuaded that AI matters in the abstract after watching it remove the most tedious part of their own week.",
+      "At STL, AI use sits \"somewhere in between strongly encouraged and required\". Changing how you work every day has a definite switching cost, which is why so many people put it off. In Bo's experience, a clear expectation from leadership can relieve \"some of the mental load\" of deciding alone how much and which parts of your routine to rethink. The point of the push is for each person to spend their time on \"that which only they can do\", while AI takes the rote work out of the day.",
+      "## CoFounder AI",
+      "An early-stage entrepreneur faces a large set of problems all at once. CoFounder AI is an AI business adviser made for working through each one of them, personalised for every member. Bo's observation about first-time founders is that a raw, generic chatbot does not help them very much, because they don't know \"what the questions are to ask\", and useful answers are usually based on memory and the context of their specific situation. CoFounder AI is that missing layer. It remembers everything as the entrepreneur and their venture grow: the pitch, the goals, the obstacles already worked through. Each new piece of advice builds on all of it, growing more specific as the business takes shape. More than anything, it is a guide, walking a founder through the whole journey in order, from creating a pitch to finding the first customers.",
+      "Every nonprofit exists to achieve a certain mission, and it has a fixed set of inputs to achieve it with: its team, its money, its time and its technology. For Bo, the point is to maximise those inputs, and AI is now one of the biggest levers available for doing it. He thinks the sector carries \"too much hesitancy\" about AI, because the cost of not adopting a useful tool is invisible: opportunity cost is a what-if, and humans tend to make poor estimations of what they might have gained. Hesitancy about powerful new tools is also nothing new. Well over two thousand years ago, Socrates warned of an invention that would erode people's memory and hand them the appearance of wisdom without the reality. That alarming new technology was writing. On the long list of tools humanity has been warned would degrade its thinking, AI is simply the newest entry.",
+      "## The meat proxy",
+      "For all his enthusiasm, there is one use of AI Bo warns against. He calls it the \"meat proxy\": a person who takes AI output and passes it along to colleagues without necessarily reading it properly or adding any thought of their own. Done once it is easy to miss. Bo's warning is about what happens when it becomes a habit: \"if they do it enough times, you stop reading what they sent, and then your team breaks down\". Multiply that across an organisation and you get his diagnosis: \"it's not a lack of information, you're drowning in bad information.\" STL's guardrails are clear and practical: a human stays in the loop on any major decision an AI is involved in, and their internal AI policy is rewritten in step with technology advancements.",
+      "Before Sky's the Limit, Bo taught world history to sixth graders through Teach for America, with 36 children in one class at varying levels of literacy and background knowledge. The dream for every teacher, he says, was to meet each student exactly where they were, which no one person standing in front of so many can do. CoFounder AI returns to that dream, a coach that meets each entrepreneur exactly where they are and knows their ambitions, their strengths and their blind spots. He told me he \"would have killed for this\" when he was starting his own organisation fifteen years ago. His members now get that and more on day one.",
+    ],
+  },
+  {
+    section: "The interview",
     date: "2026-08-25",
     title: "Fighting computerized dictators with typewriters",
     excerpt:
-      "In conversation with Alex Gladstein of The Human Rights Foundation, on why an organisation protecting dissidents' identities has gone all in on AI — just not the mainstream kind.",
+      "In conversation with Alex Gladstein of The Human Rights Foundation",
     href: "https://thepractitioners.substack.com/p/fighting-computerized-dictators-with",
-    featured: true,
     original: true,
     slug: "fighting-computerized-dictators-with-typewriters",
     body: [
@@ -59,7 +83,7 @@ export const issues: Issue[] = [
     date: "2026-08-17",
     title: "What the next step looks like",
     excerpt:
-      "In conversation with Matthias Scheffelmeier, co-founder of ChangemakerXchange, on the gap between using AI to work faster and using it to do something genuinely new — and why the social impact sector may only just be starting to find out which is which.",
+      "In conversation with Matthias Scheffelmeier of ChangemakerXchange",
     href: "https://thepractitioners.substack.com/p/what-the-next-step-looks-like",
     original: true,
     slug: "what-the-next-step-looks-like",
