@@ -47,6 +47,35 @@ const domainOf = (href: string) => {
   catch { return href; }
 };
 
+// Proper outlet name for a link, e.g. "fortune.com" → "Fortune".
+// Add new outlets here; unknown ones fall back to the bare domain.
+const outletNames: Record<string, string> = {
+  "abcnews.com": "ABC News",
+  "aljazeera.com": "Al Jazeera",
+  "alliancemagazine.org": "Alliance",
+  "axios.com": "Axios",
+  "bloomberg.com": "Bloomberg",
+  "candid.org": "Candid",
+  "cnn.com": "CNN",
+  "fortune.com": "Fortune",
+  "idronline.org": "IDR",
+  "inquirer.com": "The Philadelphia Inquirer",
+  "insidephilanthropy.com": "Inside Philanthropy",
+  "nonprofitquarterly.org": "Nonprofit Quarterly",
+  "npr.org": "NPR",
+  "ny1.com": "NY1",
+  "nytimes.com": "The New York Times",
+  "philanthropy.com": "The Chronicle of Philanthropy",
+  "restofworld.org": "Rest of World",
+  "technologyreview.com": "MIT Technology Review",
+  "theguardian.com": "The Guardian",
+  "thenationalnews.com": "The National",
+  "time.com": "TIME",
+  "usnews.com": "U.S. News",
+  "washingtonpost.com": "The Washington Post",
+};
+const outletOf = (href: string) => outletNames[domainOf(href)] ?? domainOf(href);
+
 ---
 
 <BaseLayout title={`${site.name} — ${site.tagline}`}>
@@ -115,22 +144,14 @@ const domainOf = (href: string) => {
           {
             latest.map((issue) => (
               <li class="py-6 first:pt-0">
-                <p class="dateline text-[0.7rem]">{issue.section}</p>
+                <p class="dateline text-[0.7rem]">{issue.href && !issue.original ? outletOf(issue.href) : issue.section}</p>
                 <a
                   href={pageFor(issue)}
                   class="mt-1 block font-display text-xl leading-snug text-navy transition-colors hover:text-blue"
                 >
                   {issue.title}
                 </a>
-                <p class="mt-1 text-xs text-muted">
-                  {fmt(issue.date)}
-                  {issue.original
-                    ? <> · <span class="font-medium text-navy">Original</span></>
-                    : issue.href
-                      ? <> · <a href={issue.href} class="hover:underline">{domainOf(issue.href)}</a></>
-                      : null
-                  }
-                </p>
+                <p class="mt-1 text-xs text-muted">{fmt(issue.date)}</p>
               </li>
             ))
           }
