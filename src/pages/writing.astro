@@ -2,22 +2,26 @@
 /*
   Writing page  (lives at  /writing  )
   ------------------------------------
-  For now this points readers to the Substack, where all the writing lives.
-
-  LATER — pulling posts in automatically:
-  Substack publishes an RSS feed at  <your-substack-url>/feed . When you're ready to
-  list recent posts here, you can fetch that feed at build time and loop over it.
-  A rough sketch (uncomment and adapt when ready):
-
-      // const res = await fetch(`${site.substackUrl}/feed`);
-      // const xml = await res.text();
-      // ...parse the <item> entries (title, link, pubDate) and map over them below.
-
-  Alternatively, Astro "Content Collections" let you write posts as local Markdown
-  files in src/content/ and list them here.
+  Lists every original article (the ones marked original: true in
+  src/data/issues.ts), newest first, plus a link to the Substack.
 */
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { site } from "../config";
+import { issues } from "../data/issues";
+
+const originals = issues
+  .filter((i) => i.original)
+  .sort((a, b) => b.date.localeCompare(a.date));
+
+const fmt = (iso: string) =>
+  new Date(iso + "T00:00:00").toLocaleDateString("en-GB", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+
+const pageFor = (i: { slug?: string; href?: string }) =>
+  i.slug ? `/writing/${i.slug}` : i.href ?? site.substackUrl;
 ---
 
 <BaseLayout title="Writing — The Practitioners">
@@ -43,12 +47,23 @@ import { site } from "../config";
       </a>
     </div>
 
-    <!-- Placeholder for the future post list (see the comment at the top of this file). -->
-    <div class="mt-16 border-t border-navy/10 pt-8">
-      <p class="dateline">Coming soon —</p>
-      <p class="mt-2 text-base text-muted">
-        Recent issues will appear here automatically, pulled in from the newsletter.
-      </p>
+    <!-- Every original article, newest first. -->
+    <div class="mt-16 border-t border-navy/10">
+      {originals.map((issue) => (
+        <article class="border-b border-navy/10 py-8">
+          <p class="dateline text-[0.7rem]">{issue.section} —</p>
+          <h2 class="mt-2">
+            <a
+              href={pageFor(issue)}
+              class="font-display text-2xl font-medium leading-snug text-navy transition-colors hover:text-blue"
+            >
+              {issue.title}
+            </a>
+          </h2>
+          <p class="mt-2 text-base leading-relaxed text-muted">{issue.excerpt}</p>
+          <p class="mt-3 text-xs text-muted">{fmt(issue.date)}</p>
+        </article>
+      ))}
     </div>
   </section>
 </BaseLayout>

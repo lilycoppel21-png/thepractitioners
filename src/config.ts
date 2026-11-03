@@ -18,10 +18,12 @@ export const site = {
 
   // Navigation links shown in the header (the wordmark already links to the home page,
   // so "Home" isn't listed). Add or remove entries here to change the menu everywhere.
+  // Jobs and Tools are hidden for now (their pages are still placeholders). To
+  // bring a link back, uncomment its line. The pages still exist at these addresses.
   nav: [
     { label: "About", href: "/about" },
     { label: "Writing", href: "/writing" },
-    { label: "Jobs", href: "/jobs" },
-    { label: "Tools", href: "/tools" },
-  ],
+    // { label: "Jobs", href: "/jobs" },
+    // { label: "Tools", href: "/tools" },
+  ] as { label: string; href: string }[],
 };
