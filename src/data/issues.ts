@@ -131,43 +131,27 @@ export const issues: Issue[] = [
     ],
   },
   {
-    section: "In good company",
-    date: "2026-10-02",
-    title: "A humanitarian leader makes the case for going all in on AI",
+    section: "Buyer beware",
+    date: "2026-11-02",
+    title: "Malaysia warns donors over AI-generated fake charity appeals",
     excerpt:
-      "In an opinion piece for Fortune, Jeannie Annan, the International Rescue Committee's chief research and innovation officer, argues that humanitarian organizations should be among AI's most active users and frontier testers rather than its most cautious skeptics. She writes that the sector's instinct toward caution, usually justified as protecting vulnerable people, can instead leave the people it serves worse off if careful organizations simply fall behind.",
-    href: "https://fortune.com/2026/10/02/responsible-ai-humanitarian-aid/",
-  },
-  {
-    section: "The pivot",
-    date: "2026-09-23",
-    title: "Gates Foundation closes a half-billion-dollar anti-poverty program, bets on AI instead",
-    excerpt:
-      "The Chronicle of Philanthropy reports that the Gates Foundation has wound down roughly a decade of U.S. anti-poverty research and programming in favor of NextLadder Ventures, a $1 billion, multi-funder effort to deploy personalized AI tools that help people navigate benefits applications, credit problems and job searches at moments of crisis. Critics quoted in the piece are skeptical that software can substitute for the anti-poverty research program it replaces.",
-    href: "https://www.philanthropy.com/news/gates-closed-down-a-half-billion-anti-poverty-effort-and-instead-banked-on-ai/",
-  },
-  {
-    section: "Policy watch",
-    date: "2026-10-02",
-    title: "Why responsible AI in philanthropy has to start with privacy",
-    excerpt:
-      "Writing in Alliance magazine, the author argues that the donor, grantee and case-note data foundations and charities hold is becoming the sector's most exposed asset as AI tools spread, and that protecting it is a governance question rather than a technical one. The piece notes that once a program officer or caseworker pastes sensitive information into a chatbot, what happens to it next depends entirely on that provider's own terms on logging, retention and model training.",
-    href: "https://www.alliancemagazine.org/blog/the-trust-dividend-why-responsible-ai-in-philanthropy-has-to-start-with-privacy/",
+      "The Star reports that Malaysia's communications minister, Teo Nie Ching, is urging the public to scrutinize donation appeals after a wave of scams used AI-generated images of fabricated orphans and disaster victims to solicit money. The warning reflects a wider regional pattern: generative AI is making fraudulent charity appeals cheaper to produce and harder for donors to tell apart from genuine ones.",
+    href: "https://www.thestar.com.my/news/nation/2026/11/02/sympathy-scam-teo-urges-vigilance-against-ai-generated-fake-donation-appeals",
   },
   {
     section: "Follow the money",
-    date: "2026-10-02",
-    title: "Change.org bets $100 million on an AI rebuild of its petitions platform",
+    date: "2026-10-26",
+    title: "Anthropic expands its nonprofit program on the eve of going public",
     excerpt:
-      "Axios reports that Change.org, the petitions platform that converted to nonprofit ownership in 2021, is investing about $100 million of its own money to rebuild its core product around AI, starting with a copilot that helps petition-writers draft text and identify the right decision-makers to target. Founder Ben Rattray frames the bet as restoring belief that an ordinary person's voice can still move outcomes, even as the organization's own data shows AI-generated petitions tend to underperform human-written ones.",
-    href: "https://www.axios.com/2026/10/02/changeorg-ai-100-million",
+      "The Associated Press reports that Anthropic launched a new Claude for Nonprofits plugin, built with around 30 nonprofit partners, and is widening its Claude Corps fellowship program, the same day it filed to sell shares to the public. The expansion follows an earlier pledge to commit 5% of its shares to a new Anthropic Public Benefit Fund, a move critics describe as goodwill-building ahead of a blockbuster IPO as much as genuine philanthropy.",
+    href: "https://www.washingtontimes.com/news/2026/oct/26/anthropic-expands-ai-support-nonprofits-files-sell-shares-public/",
   },
   {
-    section: "The other side",
-    date: "2026-09-21",
-    title: "Billions in AI border surveillance, but it isn't stopping migrant deaths",
+    section: "What's working",
+    date: "2026-10-21",
+    title: "Nonprofits are embracing AI, but few have a road map for it",
     excerpt:
-      "A MIT Technology Review investigation cross-references nearly 4,000 locations where migrants' remains were recovered with roughly 600 AI-enabled surveillance towers along the U.S.-Mexico border, finding little evidence that a system built and marketed partly on humanitarian grounds has reduced deaths. It's a sharp counterpoint to the sector's more hopeful narratives about AI-assisted crisis response, and a reminder that the same tools built to help can be redeployed toward enforcement instead.",
-    href: "https://www.technologyreview.com/2026/09/21/1144166/border-towers-surveillance-investigation/",
+      "Fortune reports that nonprofit AI adoption is now widespread but mostly improvised, with organizations picking up individual tools rather than following any deliberate strategy. The piece reflects a pattern now familiar from sector surveys: informal, staff-driven experimentation is common, while governance, measurement and a real plan for what adoption should achieve remain rare.",
+    href: "https://fortune.com/2026/10/21/nonprofits-embracing-ai/",
   },
 ];
