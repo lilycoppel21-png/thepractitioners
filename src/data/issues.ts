@@ -131,43 +131,27 @@ export const issues: Issue[] = [
     ],
   },
   {
-    section: "In good company",
-    date: "2026-10-02",
-    title: "A humanitarian leader makes the case for going all in on AI",
+    section: "Follow the money",
+    date: "2026-11-06",
+    title: "A foundation puts AI agents in charge of drafting its grant recommendations",
     excerpt:
-      "In an opinion piece for Fortune, Jeannie Annan, the International Rescue Committee's chief research and innovation officer, argues that humanitarian organizations should be among AI's most active users and frontier testers rather than its most cautious skeptics. She writes that the sector's instinct toward caution, usually justified as protecting vulnerable people, can instead leave the people it serves worse off if careful organizations simply fall behind.",
-    href: "https://fortune.com/2026/10/02/responsible-ai-humanitarian-aid/",
-  },
-  {
-    section: "The pivot",
-    date: "2026-09-23",
-    title: "Gates Foundation closes a half-billion-dollar anti-poverty program, bets on AI instead",
-    excerpt:
-      "The Chronicle of Philanthropy reports that the Gates Foundation has wound down roughly a decade of U.S. anti-poverty research and programming in favor of NextLadder Ventures, a $1 billion, multi-funder effort to deploy personalized AI tools that help people navigate benefits applications, credit problems and job searches at moments of crisis. Critics quoted in the piece are skeptical that software can substitute for the anti-poverty research program it replaces.",
-    href: "https://www.philanthropy.com/news/gates-closed-down-a-half-billion-anti-poverty-effort-and-instead-banked-on-ai/",
+      "The Chronicle of Philanthropy profiles the Circle Foundation, where AI agents draft, challenge and analyze grant decisions inside a closed system while two human staff retain final say. Funded by shares set aside in Circle Internet Group's 2025 IPO, it's an early test of what its leaders call being 'AI-native' without being 'AI-autonomous.'",
+    href: "https://www.philanthropy.com/news/ai-recommends-humans-decide-circle-foundations-bet-on-agentic-philanthropy/",
   },
   {
     section: "Policy watch",
-    date: "2026-10-02",
-    title: "Why responsible AI in philanthropy has to start with privacy",
+    date: "2026-10-29",
+    title: "A nonprofit AI-safety group says pre-launch testing isn't enough for AI agents",
     excerpt:
-      "Writing in Alliance magazine, the author argues that the donor, grantee and case-note data foundations and charities hold is becoming the sector's most exposed asset as AI tools spread, and that protecting it is a governance question rather than a technical one. The piece notes that once a program officer or caseworker pastes sensitive information into a chatbot, what happens to it next depends entirely on that provider's own terms on logging, retention and model training.",
-    href: "https://www.alliancemagazine.org/blog/the-trust-dividend-why-responsible-ai-in-philanthropy-has-to-start-with-privacy/",
+      "Writing in MIT Technology Review, Madhulika Srikumar of the nonprofit Partnership on AI argues that as agents spread into finance, government and medicine, regulators and developers need continuous, real-time monitoring of what deployed agents actually do, rather than evaluation that stops once they ship.",
+    href: "https://www.technologyreview.com/2026/10/29/1147824/monitor-ai-agents-actions-real-time/",
   },
   {
-    section: "Follow the money",
-    date: "2026-10-02",
-    title: "Change.org bets $100 million on an AI rebuild of its petitions platform",
+    section: "In good company",
+    date: "2026-10-26",
+    title: "Anthropic widens its nonprofit program the same week it files to go public",
     excerpt:
-      "Axios reports that Change.org, the petitions platform that converted to nonprofit ownership in 2021, is investing about $100 million of its own money to rebuild its core product around AI, starting with a copilot that helps petition-writers draft text and identify the right decision-makers to target. Founder Ben Rattray frames the bet as restoring belief that an ordinary person's voice can still move outcomes, even as the organization's own data shows AI-generated petitions tend to underperform human-written ones.",
-    href: "https://www.axios.com/2026/10/02/changeorg-ai-100-million",
-  },
-  {
-    section: "The other side",
-    date: "2026-09-21",
-    title: "Billions in AI border surveillance, but it isn't stopping migrant deaths",
-    excerpt:
-      "A MIT Technology Review investigation cross-references nearly 4,000 locations where migrants' remains were recovered with roughly 600 AI-enabled surveillance towers along the U.S.-Mexico border, finding little evidence that a system built and marketed partly on humanitarian grounds has reduced deaths. It's a sharp counterpoint to the sector's more hopeful narratives about AI-assisted crisis response, and a reminder that the same tools built to help can be redeployed toward enforcement instead.",
-    href: "https://www.technologyreview.com/2026/09/21/1144166/border-towers-surveillance-investigation/",
+      "The Associated Press reports that Anthropic has expanded free and discounted Claude access for roughly 25,000 nonprofits, most with fewer than ten staff, and broadened its Claude Corps fellowship, even as it pursues a stock listing expected to value the company near $1 trillion. Critics quoted in the piece see the nonprofit pledges partly as a goodwill play ahead of the IPO.",
+    href: "https://ny1.com/nyc/all-boroughs/ap-top-news/2026/10/26/anthropic-expands-ai-support-for-nonprofits-as-it-files-to-sell-shares-to-the-public",
   },
 ];
