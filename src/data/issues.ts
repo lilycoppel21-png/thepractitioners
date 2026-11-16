@@ -131,43 +131,27 @@ export const issues: Issue[] = [
     ],
   },
   {
-    section: "In good company",
-    date: "2026-10-02",
-    title: "A humanitarian leader makes the case for going all in on AI",
-    excerpt:
-      "In an opinion piece for Fortune, Jeannie Annan, the International Rescue Committee's chief research and innovation officer, argues that humanitarian organizations should be among AI's most active users and frontier testers rather than its most cautious skeptics. She writes that the sector's instinct toward caution, usually justified as protecting vulnerable people, can instead leave the people it serves worse off if careful organizations simply fall behind.",
-    href: "https://fortune.com/2026/10/02/responsible-ai-humanitarian-aid/",
-  },
-  {
-    section: "The pivot",
-    date: "2026-09-23",
-    title: "Gates Foundation closes a half-billion-dollar anti-poverty program, bets on AI instead",
-    excerpt:
-      "The Chronicle of Philanthropy reports that the Gates Foundation has wound down roughly a decade of U.S. anti-poverty research and programming in favor of NextLadder Ventures, a $1 billion, multi-funder effort to deploy personalized AI tools that help people navigate benefits applications, credit problems and job searches at moments of crisis. Critics quoted in the piece are skeptical that software can substitute for the anti-poverty research program it replaces.",
-    href: "https://www.philanthropy.com/news/gates-closed-down-a-half-billion-anti-poverty-effort-and-instead-banked-on-ai/",
-  },
-  {
-    section: "Policy watch",
-    date: "2026-10-02",
-    title: "Why responsible AI in philanthropy has to start with privacy",
-    excerpt:
-      "Writing in Alliance magazine, the author argues that the donor, grantee and case-note data foundations and charities hold is becoming the sector's most exposed asset as AI tools spread, and that protecting it is a governance question rather than a technical one. The piece notes that once a program officer or caseworker pastes sensitive information into a chatbot, what happens to it next depends entirely on that provider's own terms on logging, retention and model training.",
-    href: "https://www.alliancemagazine.org/blog/the-trust-dividend-why-responsible-ai-in-philanthropy-has-to-start-with-privacy/",
-  },
-  {
     section: "Follow the money",
-    date: "2026-10-02",
-    title: "Change.org bets $100 million on an AI rebuild of its petitions platform",
+    date: "2026-11-11",
+    title: "AI philanthropists want results in two years. Can development deliver?",
     excerpt:
-      "Axios reports that Change.org, the petitions platform that converted to nonprofit ownership in 2021, is investing about $100 million of its own money to rebuild its core product around AI, starting with a copilot that helps petition-writers draft text and identify the right decision-makers to target. Founder Ben Rattray frames the bet as restoring belief that an ordinary person's voice can still move outcomes, even as the organization's own data shows AI-generated petitions tend to underperform human-written ones.",
-    href: "https://www.axios.com/2026/10/02/changeorg-ai-100-million",
+      "Devex reports that funders flush with new AI-driven wealth are pushing for measurable impact within two years, a timeline that worries development economists. Center for Global Development president Rachel Glennerster argues that proven organizations like Save the Children and the IRC could absorb the money faster than funders could build a thousand new ones, while OpenAI Foundation's Anna Makanju says the fund is specifically seeking projects built on frontier AI.",
+    href: "https://www.devex.com/news/ai-philanthropists-want-results-in-two-years-can-development-deliver-113658",
+  },
+  {
+    section: "Worth reading",
+    date: "2026-11-10",
+    title: "Amazon commits $100 million in AI and cloud credits to close health gaps",
+    excerpt:
+      "FierceHealthcare reports that Amazon Web Services has launched a five-year, $100 million Health Impact Initiative that will give AI, agentic services and cloud infrastructure to health nonprofits, governments and research institutions working on health equity worldwide, succeeding an earlier $60 million program that reached more than 400 organizations.",
+    href: "https://www.fiercehealthcare.com/ai-and-machine-learning/amazon-web-services-commits-100m-ai-cloud-tech-initiatives-over-next-5",
   },
   {
     section: "The other side",
-    date: "2026-09-21",
-    title: "Billions in AI border surveillance, but it isn't stopping migrant deaths",
+    date: "2026-11-09",
+    title: "AI is flooding grantmakers with proposals, and the fix isn't more AI",
     excerpt:
-      "A MIT Technology Review investigation cross-references nearly 4,000 locations where migrants' remains were recovered with roughly 600 AI-enabled surveillance towers along the U.S.-Mexico border, finding little evidence that a system built and marketed partly on humanitarian grounds has reduced deaths. It's a sharp counterpoint to the sector's more hopeful narratives about AI-assisted crisis response, and a reminder that the same tools built to help can be redeployed toward enforcement instead.",
-    href: "https://www.technologyreview.com/2026/09/21/1144166/border-towers-surveillance-investigation/",
+      "The Chronicle of Philanthropy reports that foundations are seeing a rising tide of AI-assisted grant applications, though the evidence for how much AI is driving the increase is still mostly anecdotal. The piece argues the answer isn't more automation in the review process, but smaller asks, slower timelines, and keeping people in charge of funding decisions.",
+    href: "https://www.philanthropy.com/solutions/drowning-in-grant-proposals-more-ai-isnt-the-only-answer/",
   },
 ];
