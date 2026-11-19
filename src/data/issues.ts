@@ -131,43 +131,27 @@ export const issues: Issue[] = [
     ],
   },
   {
-    section: "In good company",
-    date: "2026-10-02",
-    title: "A humanitarian leader makes the case for going all in on AI",
+    section: "Field report",
+    date: "2026-11-07",
+    title: "Inside the foundation trying to run grantmaking almost entirely through AI agents",
     excerpt:
-      "In an opinion piece for Fortune, Jeannie Annan, the International Rescue Committee's chief research and innovation officer, argues that humanitarian organizations should be among AI's most active users and frontier testers rather than its most cautious skeptics. She writes that the sector's instinct toward caution, usually justified as protecting vulnerable people, can instead leave the people it serves worse off if careful organizations simply fall behind.",
-    href: "https://fortune.com/2026/10/02/responsible-ai-humanitarian-aid/",
-  },
-  {
-    section: "The pivot",
-    date: "2026-09-23",
-    title: "Gates Foundation closes a half-billion-dollar anti-poverty program, bets on AI instead",
-    excerpt:
-      "The Chronicle of Philanthropy reports that the Gates Foundation has wound down roughly a decade of U.S. anti-poverty research and programming in favor of NextLadder Ventures, a $1 billion, multi-funder effort to deploy personalized AI tools that help people navigate benefits applications, credit problems and job searches at moments of crisis. Critics quoted in the piece are skeptical that software can substitute for the anti-poverty research program it replaces.",
-    href: "https://www.philanthropy.com/news/gates-closed-down-a-half-billion-anti-poverty-effort-and-instead-banked-on-ai/",
-  },
-  {
-    section: "Policy watch",
-    date: "2026-10-02",
-    title: "Why responsible AI in philanthropy has to start with privacy",
-    excerpt:
-      "Writing in Alliance magazine, the author argues that the donor, grantee and case-note data foundations and charities hold is becoming the sector's most exposed asset as AI tools spread, and that protecting it is a governance question rather than a technical one. The piece notes that once a program officer or caseworker pastes sensitive information into a chatbot, what happens to it next depends entirely on that provider's own terms on logging, retention and model training.",
-    href: "https://www.alliancemagazine.org/blog/the-trust-dividend-why-responsible-ai-in-philanthropy-has-to-start-with-privacy/",
-  },
-  {
-    section: "Follow the money",
-    date: "2026-10-02",
-    title: "Change.org bets $100 million on an AI rebuild of its petitions platform",
-    excerpt:
-      "Axios reports that Change.org, the petitions platform that converted to nonprofit ownership in 2021, is investing about $100 million of its own money to rebuild its core product around AI, starting with a copilot that helps petition-writers draft text and identify the right decision-makers to target. Founder Ben Rattray frames the bet as restoring belief that an ordinary person's voice can still move outcomes, even as the organization's own data shows AI-generated petitions tend to underperform human-written ones.",
-    href: "https://www.axios.com/2026/10/02/changeorg-ai-100-million",
+      "The Chronicle of Philanthropy profiles Circle Foundation, the grantmaking arm of stablecoin issuer Circle Internet Group, which is staffed by just two people and leans on AI agents to screen proposals, score applicants against its own rubrics and flag missing information. Its leaders describe the model as \"AI recommends, humans decide,\" and funding experts quoted in the piece say they know of no other foundation taking as thoroughly \"AI-first\" an approach.",
+    href: "https://www.philanthropy.com/news/ai-recommends-humans-decide-circle-foundations-bet-on-agentic-philanthropy/",
   },
   {
     section: "The other side",
-    date: "2026-09-21",
-    title: "Billions in AI border surveillance, but it isn't stopping migrant deaths",
+    date: "2026-11-07",
+    title: "Conservation groups are embracing AI, and warning about what powers it",
     excerpt:
-      "A MIT Technology Review investigation cross-references nearly 4,000 locations where migrants' remains were recovered with roughly 600 AI-enabled surveillance towers along the U.S.-Mexico border, finding little evidence that a system built and marketed partly on humanitarian grounds has reduced deaths. It's a sharp counterpoint to the sector's more hopeful narratives about AI-assisted crisis response, and a reminder that the same tools built to help can be redeployed toward enforcement instead.",
-    href: "https://www.technologyreview.com/2026/09/21/1144166/border-towers-surveillance-investigation/",
+      "Reuters surveyed 15 major environmental and conservation organizations and found that all of them now use AI in some form, for tasks like tracking wildfires and counting endangered species, while warning that the data centers behind it are driving a sharp rise in electricity and water use. Greenpeace was the outlier, saying it would rather avoid the technology altogether and is actively opposing new data center construction.",
+    href: "https://www.thestar.com.my/tech/tech-news/2026/11/07/environmental-groups-embrace-ai-even-as-they-warn-of-data-center-impacts",
+  },
+  {
+    section: "Policy watch",
+    date: "2026-11-12",
+    title: "Why philanthropy's push into AI research is running into a political headwind",
+    excerpt:
+      "Inside Philanthropy reports on a new Coalition for Independent Technology Research study finding that political pressure, including the threat of deportation for foreign-born academics, is discouraging independent research into AI's societal effects, compounding earlier NSF grant cancellations. The piece argues this raises the stakes for philanthropic funders trying to keep independent AI research alive as government support for it recedes.",
+    href: "https://www.insidephilanthropy.com/home/the-trump-chilling-effect-is-also-affecting-independent-ai-research",
   },
 ];
